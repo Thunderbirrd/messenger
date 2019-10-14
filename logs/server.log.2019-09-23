@@ -1,0 +1,45 @@
+2019-09-23 22:54:07,033 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-23 22:54:07,035 INFO server.py Запущен сервер, порт для подключений: 7777 , адрес с которого принимаются подключения: . Если адрес не указан, принимаются соединения с любых адресов.
+2019-09-23 22:54:13,314 INFO server.py Установлено соедение с ПК ('127.0.0.1', 62550)
+2019-09-23 22:54:13,314 DEBUG decorators.py Была вызвана функция get_message c параметрами (<socket.socket fd=532, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 62550)>,) , {}. Вызов из модуля basic_things.common_utils
+2019-09-23 22:54:13,317 DEBUG server.py Получено сообщение {'action': 'presence', 'time': 1569268453.3173883, 'user': {'account_name': 'Guest'}}
+2019-09-23 22:54:13,318 DEBUG decorators.py Была вызвана функция message_from_client_func c параметрами ({'action': 'presence', 'time': 1569268453.3173883, 'user': {'account_name': 'Guest'}},) , {}. Вызов из модуля __main__
+2019-09-23 22:54:13,318 INFO server.py Сформирован ответ клиенту {'response': 200}
+2019-09-23 22:54:13,318 DEBUG decorators.py Была вызвана функция send_message c параметрами (<socket.socket fd=532, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 62550)>, {'response': 200}) , {}. Вызов из модуля basic_things.common_utils
+2019-09-23 22:54:13,318 DEBUG server.py Соединение с клиентом ('127.0.0.1', 62550) закрывается.
+2019-09-23 23:05:39,748 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-23 23:05:39,748 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в 1569269139.7481692
+2019-09-23 23:05:39,749 INFO server.py Запущен сервер, порт для подключений: 7777 , адрес с которого принимаются подключения: . Если адрес не указан, принимаются соединения с любых адресов.
+2019-09-23 23:05:43,576 INFO server.py Установлено соедение с ПК ('127.0.0.1', 62698)
+2019-09-23 23:05:43,576 DEBUG decorators.py Была вызвана функция get_message c параметрами (<socket.socket fd=504, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 62698)>,) , {}. Вызов из модуля basic_things.common_utils
+2019-09-23 23:05:43,577 DEBUG server.py Получено сообщение {'action': 'presence', 'time': 1569269143.5763676, 'user': {'account_name': 'Guest'}}
+2019-09-23 23:05:43,577 DEBUG decorators.py Была вызвана функция message_from_client_func c параметрами ({'action': 'presence', 'time': 1569269143.5763676, 'user': {'account_name': 'Guest'}},) , {}. Вызов из модуля __main__
+2019-09-23 23:05:43,577 DEBUG decorators.py Функция message_from_client_func вызвана из функции 'main' в 1569269143.577367
+2019-09-23 23:05:43,577 INFO server.py Сформирован ответ клиенту {'response': 200}
+2019-09-23 23:05:43,577 DEBUG decorators.py Была вызвана функция send_message c параметрами (<socket.socket fd=504, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 62698)>, {'response': 200}) , {}. Вызов из модуля basic_things.common_utils
+2019-09-23 23:05:43,577 DEBUG server.py Соединение с клиентом ('127.0.0.1', 62698) закрывается.
+2019-09-23 23:08:32,237 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-23 23:08:32,237 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в <class 'datetime.time'>
+2019-09-23 23:08:32,239 INFO server.py Запущен сервер, порт для подключений: 7777 , адрес с которого принимаются подключения: . Если адрес не указан, принимаются соединения с любых адресов.
+2019-09-23 23:08:36,031 INFO server.py Установлено соедение с ПК ('127.0.0.1', 62731)
+2019-09-23 23:08:36,031 DEBUG decorators.py Была вызвана функция get_message c параметрами (<socket.socket fd=492, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 62731)>,) , {}. Вызов из модуля basic_things.common_utils
+2019-09-23 23:08:36,031 DEBUG server.py Получено сообщение {'action': 'presence', 'time': 1569269316.03104, 'user': {'account_name': 'Guest'}}
+2019-09-23 23:08:36,031 DEBUG decorators.py Была вызвана функция message_from_client_func c параметрами ({'action': 'presence', 'time': 1569269316.03104, 'user': {'account_name': 'Guest'}},) , {}. Вызов из модуля __main__
+2019-09-23 23:08:36,032 DEBUG decorators.py Функция message_from_client_func вызвана из функции 'main' в <class 'datetime.time'>
+2019-09-23 23:08:36,032 INFO server.py Сформирован ответ клиенту {'response': 200}
+2019-09-23 23:08:36,032 DEBUG decorators.py Была вызвана функция send_message c параметрами (<socket.socket fd=492, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 62731)>, {'response': 200}) , {}. Вызов из модуля basic_things.common_utils
+2019-09-23 23:08:36,032 DEBUG server.py Соединение с клиентом ('127.0.0.1', 62731) закрывается.
+2019-09-23 23:09:25,255 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-23 23:09:25,255 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в <class 'datetime.datetime'>
+2019-09-23 23:09:25,255 INFO server.py Запущен сервер, порт для подключений: 7777 , адрес с которого принимаются подключения: . Если адрес не указан, принимаются соединения с любых адресов.
+2019-09-23 23:13:17,366 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-23 23:13:17,366 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в 2019-09-23 23:13:17.366513
+2019-09-23 23:13:17,366 INFO server.py Запущен сервер, порт для подключений: 7777 , адрес с которого принимаются подключения: . Если адрес не указан, принимаются соединения с любых адресов.
+2019-09-23 23:13:19,711 INFO server.py Установлено соедение с ПК ('127.0.0.1', 62772)
+2019-09-23 23:13:19,711 DEBUG decorators.py Была вызвана функция get_message c параметрами (<socket.socket fd=488, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 62772)>,) , {}. Вызов из модуля basic_things.common_utils
+2019-09-23 23:13:19,711 DEBUG server.py Получено сообщение {'action': 'presence', 'time': 1569269599.7113786, 'user': {'account_name': 'Guest'}}
+2019-09-23 23:13:19,711 DEBUG decorators.py Была вызвана функция message_from_client_func c параметрами ({'action': 'presence', 'time': 1569269599.7113786, 'user': {'account_name': 'Guest'}},) , {}. Вызов из модуля __main__
+2019-09-23 23:13:19,712 DEBUG decorators.py Функция message_from_client_func вызвана из функции 'main' в 2019-09-23 23:13:19.712376
+2019-09-23 23:13:19,712 INFO server.py Сформирован ответ клиенту {'response': 200}
+2019-09-23 23:13:19,712 DEBUG decorators.py Была вызвана функция send_message c параметрами (<socket.socket fd=488, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 62772)>, {'response': 200}) , {}. Вызов из модуля basic_things.common_utils
+2019-09-23 23:13:19,712 DEBUG server.py Соединение с клиентом ('127.0.0.1', 62772) закрывается.

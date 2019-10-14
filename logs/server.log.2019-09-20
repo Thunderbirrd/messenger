@@ -1,0 +1,4 @@
+2019-09-20 23:38:04,971 CRITICAL server_log_config.py Test critical event
+2019-09-20 23:38:04,972 ERROR server_log_config.py Test error event
+2019-09-20 23:38:04,972 DEBUG server_log_config.py Test debug event
+2019-09-20 23:38:04,972 INFO server_log_config.py Test info event

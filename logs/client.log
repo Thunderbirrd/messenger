@@ -1,0 +1,888 @@
+2019-09-20 23:48:29,935 CRITICAL client_log_config.py Test critical event
+2019-09-20 23:48:29,935 ERROR client_log_config.py Test error event
+2019-09-20 23:48:29,935 DEBUG client_log_config.py Test debug event
+2019-09-20 23:48:29,935 INFO client_log_config.py Test info event
+2019-09-23 22:54:13,298 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-23 22:54:13,298 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777
+2019-09-23 22:54:13,314 DEBUG decorators.py Была вызвана функция create_presence c параметрами () , {}. Вызов из модуля __main__
+2019-09-23 22:54:13,317 DEBUG client.py Сформировано presence сообщение для пользователя Guest
+2019-09-23 22:54:13,317 DEBUG decorators.py Была вызвана функция send_message c параметрами (<socket.socket fd=500, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 62550), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1569268453.3173883, 'user': {'account_name': 'Guest'}}) , {}. Вызов из модуля basic_things.common_utils
+2019-09-23 22:54:13,317 DEBUG decorators.py Была вызвана функция get_message c параметрами (<socket.socket fd=500, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 62550), raddr=('127.0.0.1', 7777)>,) , {}. Вызов из модуля basic_things.common_utils
+2019-09-23 22:54:13,318 DEBUG decorators.py Была вызвана функция process_answer c параметрами ({'response': 200},) , {}. Вызов из модуля __main__
+2019-09-23 22:54:13,318 DEBUG client.py Разбор сообщения от сервера: {'response': 200}
+2019-09-23 22:54:13,318 INFO client.py Принят ответ от сервера 200 : OK
+2019-09-23 23:05:43,572 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-23 23:05:43,574 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в 1569269143.574337
+2019-09-23 23:05:43,575 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777
+2019-09-23 23:05:43,576 DEBUG decorators.py Была вызвана функция create_presence c параметрами () , {}. Вызов из модуля __main__
+2019-09-23 23:05:43,576 DEBUG decorators.py Функция create_presence вызвана из функции 'main' в 1569269143.5763676
+2019-09-23 23:05:43,576 DEBUG client.py Сформировано presence сообщение для пользователя Guest
+2019-09-23 23:05:43,576 DEBUG decorators.py Была вызвана функция send_message c параметрами (<socket.socket fd=524, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 62698), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1569269143.5763676, 'user': {'account_name': 'Guest'}}) , {}. Вызов из модуля basic_things.common_utils
+2019-09-23 23:05:43,576 DEBUG decorators.py Была вызвана функция get_message c параметрами (<socket.socket fd=524, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 62698), raddr=('127.0.0.1', 7777)>,) , {}. Вызов из модуля basic_things.common_utils
+2019-09-23 23:05:43,577 DEBUG decorators.py Была вызвана функция process_answer c параметрами ({'response': 200},) , {}. Вызов из модуля __main__
+2019-09-23 23:05:43,577 DEBUG decorators.py Функция process_answer вызвана из функции 'main' в 1569269143.577367
+2019-09-23 23:05:43,577 DEBUG client.py Разбор сообщения от сервера: {'response': 200}
+2019-09-23 23:05:43,577 INFO client.py Принят ответ от сервера 200 : OK
+2019-09-23 23:08:36,015 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-23 23:08:36,015 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в <class 'datetime.time'>
+2019-09-23 23:08:36,029 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777
+2019-09-23 23:08:36,031 DEBUG decorators.py Была вызвана функция create_presence c параметрами () , {}. Вызов из модуля __main__
+2019-09-23 23:08:36,031 DEBUG decorators.py Функция create_presence вызвана из функции 'main' в <class 'datetime.time'>
+2019-09-23 23:08:36,031 DEBUG client.py Сформировано presence сообщение для пользователя Guest
+2019-09-23 23:08:36,031 DEBUG decorators.py Была вызвана функция send_message c параметрами (<socket.socket fd=524, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 62731), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1569269316.03104, 'user': {'account_name': 'Guest'}}) , {}. Вызов из модуля basic_things.common_utils
+2019-09-23 23:08:36,031 DEBUG decorators.py Была вызвана функция get_message c параметрами (<socket.socket fd=524, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 62731), raddr=('127.0.0.1', 7777)>,) , {}. Вызов из модуля basic_things.common_utils
+2019-09-23 23:08:36,032 DEBUG decorators.py Была вызвана функция process_answer c параметрами ({'response': 200},) , {}. Вызов из модуля __main__
+2019-09-23 23:08:36,032 DEBUG decorators.py Функция process_answer вызвана из функции 'main' в <class 'datetime.time'>
+2019-09-23 23:08:36,032 DEBUG client.py Разбор сообщения от сервера: {'response': 200}
+2019-09-23 23:08:36,032 INFO client.py Принят ответ от сервера 200 : OK
+2019-09-23 23:09:20,412 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-23 23:09:20,412 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в <class 'datetime.datetime'>
+2019-09-23 23:09:20,413 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777
+2019-09-23 23:13:19,708 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-23 23:13:19,708 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в 2019-09-23 23:13:19.708990
+2019-09-23 23:13:19,709 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777
+2019-09-23 23:13:19,711 DEBUG decorators.py Была вызвана функция create_presence c параметрами () , {}. Вызов из модуля __main__
+2019-09-23 23:13:19,711 DEBUG decorators.py Функция create_presence вызвана из функции 'main' в 2019-09-23 23:13:19.711378
+2019-09-23 23:13:19,711 DEBUG client.py Сформировано presence сообщение для пользователя Guest
+2019-09-23 23:13:19,711 DEBUG decorators.py Была вызвана функция send_message c параметрами (<socket.socket fd=524, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 62772), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1569269599.7113786, 'user': {'account_name': 'Guest'}}) , {}. Вызов из модуля basic_things.common_utils
+2019-09-23 23:13:19,711 DEBUG decorators.py Была вызвана функция get_message c параметрами (<socket.socket fd=524, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 62772), raddr=('127.0.0.1', 7777)>,) , {}. Вызов из модуля basic_things.common_utils
+2019-09-23 23:13:19,712 DEBUG decorators.py Была вызвана функция process_answer c параметрами ({'response': 200},) , {}. Вызов из модуля __main__
+2019-09-23 23:13:19,712 DEBUG decorators.py Функция process_answer вызвана из функции 'main' в 2019-09-23 23:13:19.712376
+2019-09-23 23:13:19,712 DEBUG client.py Разбор сообщения от сервера: {'response': 200}
+2019-09-23 23:13:19,712 INFO client.py Принят ответ от сервера 200 : OK
+2019-09-27 11:14:24,686 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:14:24,695 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в 2019-09-27 11:14:24.695496
+2019-09-27 11:14:24,696 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, режим работы: listen
+2019-09-27 11:14:24,697 DEBUG decorators.py Была вызвана функция create_presence c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:14:24,697 DEBUG decorators.py Функция create_presence вызвана из функции 'main' в 2019-09-27 11:14:24.697716
+2019-09-27 11:14:24,697 DEBUG client.py Сформировано presence сообщение для пользователя Guest
+2019-09-27 11:14:24,697 DEBUG decorators.py Была вызвана функция send_message c параметрами (<socket.socket fd=468, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 54181), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1569572064.6977165, 'user': {'account_name': 'Guest'}}) , {}. Вызов из модуля basic_things.common_utils
+2019-09-27 11:14:24,697 DEBUG decorators.py Была вызвана функция get_message c параметрами (<socket.socket fd=468, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 54181), raddr=('127.0.0.1', 7777)>,) , {}. Вызов из модуля basic_things.common_utils
+2019-09-27 11:17:20,278 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:17:20,278 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в 2019-09-27 11:17:20.278775
+2019-09-27 11:17:20,279 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, режим работы: listen
+2019-09-27 11:17:20,284 DEBUG decorators.py Была вызвана функция create_presence c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:17:20,284 DEBUG decorators.py Функция create_presence вызвана из функции 'main' в 2019-09-27 11:17:20.284748
+2019-09-27 11:17:20,284 DEBUG client.py Сформировано presence сообщение для пользователя Guest
+2019-09-27 11:17:20,285 DEBUG decorators.py Была вызвана функция send_message c параметрами (<socket.socket fd=468, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 54186), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1569572240.2847486, 'user': {'account_name': 'Guest'}}) , {}. Вызов из модуля basic_things.common_utils
+2019-09-27 11:17:20,285 DEBUG decorators.py Была вызвана функция get_message c параметрами (<socket.socket fd=468, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 54186), raddr=('127.0.0.1', 7777)>,) , {}. Вызов из модуля basic_things.common_utils
+2019-09-27 11:19:53,138 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:19:53,138 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в 2019-09-27 11:19:53.138987
+2019-09-27 11:19:53,141 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, режим работы: listen
+2019-09-27 11:19:53,143 DEBUG decorators.py Была вызвана функция create_presence c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:19:53,143 DEBUG decorators.py Функция create_presence вызвана из функции 'main' в 2019-09-27 11:19:53.143510
+2019-09-27 11:19:53,144 DEBUG client.py Сформировано presence сообщение для пользователя Guest
+2019-09-27 11:19:53,144 DEBUG decorators.py Была вызвана функция send_message c параметрами (<socket.socket fd=508, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 54208), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1569572393.144277, 'user': {'account_name': 'Guest'}}) , {}. Вызов из модуля basic_things.common_utils
+2019-09-27 11:19:53,145 DEBUG decorators.py Была вызвана функция get_message c параметрами (<socket.socket fd=508, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 54208), raddr=('127.0.0.1', 7777)>,) , {}. Вызов из модуля basic_things.common_utils
+2019-09-27 11:19:53,152 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:19:53,152 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в 2019-09-27 11:19:53.152122
+2019-09-27 11:19:53,156 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, режим работы: listen
+2019-09-27 11:19:53,158 DEBUG decorators.py Была вызвана функция create_presence c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:19:53,158 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:19:53,158 DEBUG decorators.py Функция create_presence вызвана из функции 'main' в 2019-09-27 11:19:53.158822
+2019-09-27 11:19:53,158 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в 2019-09-27 11:19:53.158822
+2019-09-27 11:19:53,158 DEBUG client.py Сформировано presence сообщение для пользователя Guest
+2019-09-27 11:19:53,158 DEBUG decorators.py Была вызвана функция send_message c параметрами (<socket.socket fd=612, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 54209), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1569572393.1588228, 'user': {'account_name': 'Guest'}}) , {}. Вызов из модуля basic_things.common_utils
+2019-09-27 11:19:53,159 DEBUG decorators.py Была вызвана функция get_message c параметрами (<socket.socket fd=612, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 54209), raddr=('127.0.0.1', 7777)>,) , {}. Вызов из модуля basic_things.common_utils
+2019-09-27 11:19:53,160 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, режим работы: send
+2019-09-27 11:19:53,161 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:19:53,161 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в 2019-09-27 11:19:53.161574
+2019-09-27 11:19:53,163 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, режим работы: send
+2019-09-27 11:19:53,163 DEBUG decorators.py Функция create_presence вызвана из функции 'main' в 2019-09-27 11:19:53.163515
+2019-09-27 11:19:53,163 DEBUG client.py Сформировано presence сообщение для пользователя Guest
+2019-09-27 11:19:53,163 DEBUG decorators.py Была вызвана функция send_message c параметрами (<socket.socket fd=588, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 54210), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1569572393.1635153, 'user': {'account_name': 'Guest'}}) , {}. Вызов из модуля basic_things.common_utils
+2019-09-27 11:19:53,164 DEBUG decorators.py Была вызвана функция get_message c параметрами (<socket.socket fd=588, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 54210), raddr=('127.0.0.1', 7777)>,) , {}. Вызов из модуля basic_things.common_utils
+2019-09-27 11:19:53,165 DEBUG decorators.py Была вызвана функция create_presence c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:19:53,165 DEBUG decorators.py Функция create_presence вызвана из функции 'main' в 2019-09-27 11:19:53.165419
+2019-09-27 11:19:53,165 DEBUG client.py Сформировано presence сообщение для пользователя Guest
+2019-09-27 11:19:53,165 DEBUG decorators.py Была вызвана функция send_message c параметрами (<socket.socket fd=628, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 54211), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1569572393.1654193, 'user': {'account_name': 'Guest'}}) , {}. Вызов из модуля basic_things.common_utils
+2019-09-27 11:19:53,165 DEBUG decorators.py Была вызвана функция get_message c параметрами (<socket.socket fd=628, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 54211), raddr=('127.0.0.1', 7777)>,) , {}. Вызов из модуля basic_things.common_utils
+2019-09-27 11:19:53,166 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:19:53,166 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в 2019-09-27 11:19:53.166415
+2019-09-27 11:19:53,166 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, режим работы: listen
+2019-09-27 11:19:53,170 DEBUG decorators.py Была вызвана функция create_presence c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:19:53,170 DEBUG decorators.py Функция create_presence вызвана из функции 'main' в 2019-09-27 11:19:53.170576
+2019-09-27 11:19:53,170 DEBUG client.py Сформировано presence сообщение для пользователя Guest
+2019-09-27 11:19:53,170 DEBUG decorators.py Была вызвана функция send_message c параметрами (<socket.socket fd=612, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 54212), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1569572393.170576, 'user': {'account_name': 'Guest'}}) , {}. Вызов из модуля basic_things.common_utils
+2019-09-27 11:19:53,170 DEBUG decorators.py Была вызвана функция get_message c параметрами (<socket.socket fd=612, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 54212), raddr=('127.0.0.1', 7777)>,) , {}. Вызов из модуля basic_things.common_utils
+2019-09-27 11:19:53,192 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:19:53,192 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в 2019-09-27 11:19:53.192150
+2019-09-27 11:19:53,192 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, режим работы: listen
+2019-09-27 11:19:53,196 DEBUG decorators.py Была вызвана функция create_presence c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:19:53,197 DEBUG decorators.py Функция create_presence вызвана из функции 'main' в 2019-09-27 11:19:53.197059
+2019-09-27 11:19:53,197 DEBUG client.py Сформировано presence сообщение для пользователя Guest
+2019-09-27 11:19:53,197 DEBUG decorators.py Была вызвана функция send_message c параметрами (<socket.socket fd=592, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 54213), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1569572393.1970599, 'user': {'account_name': 'Guest'}}) , {}. Вызов из модуля basic_things.common_utils
+2019-09-27 11:19:53,197 DEBUG decorators.py Была вызвана функция get_message c параметрами (<socket.socket fd=592, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 54213), raddr=('127.0.0.1', 7777)>,) , {}. Вызов из модуля basic_things.common_utils
+2019-09-27 11:19:53,198 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:19:53,198 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в 2019-09-27 11:19:53.198056
+2019-09-27 11:19:53,198 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, режим работы: listen
+2019-09-27 11:19:53,204 DEBUG decorators.py Была вызвана функция create_presence c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:19:53,204 DEBUG decorators.py Функция create_presence вызвана из функции 'main' в 2019-09-27 11:19:53.204081
+2019-09-27 11:19:53,204 DEBUG client.py Сформировано presence сообщение для пользователя Guest
+2019-09-27 11:19:53,204 DEBUG decorators.py Была вызвана функция send_message c параметрами (<socket.socket fd=592, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 54214), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1569572393.2040818, 'user': {'account_name': 'Guest'}}) , {}. Вызов из модуля basic_things.common_utils
+2019-09-27 11:19:53,204 DEBUG decorators.py Была вызвана функция get_message c параметрами (<socket.socket fd=592, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 54214), raddr=('127.0.0.1', 7777)>,) , {}. Вызов из модуля basic_things.common_utils
+2019-09-27 11:20:44,437 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:20:44,437 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в 2019-09-27 11:20:44.437358
+2019-09-27 11:20:44,442 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, режим работы: listen
+2019-09-27 11:20:44,445 DEBUG decorators.py Была вызвана функция create_presence c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:20:44,446 DEBUG decorators.py Функция create_presence вызвана из функции 'main' в 2019-09-27 11:20:44.446911
+2019-09-27 11:20:44,446 DEBUG client.py Сформировано presence сообщение для пользователя Guest
+2019-09-27 11:20:44,447 DEBUG decorators.py Была вызвана функция send_message c параметрами (<socket.socket fd=468, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 54215), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1569572444.446912, 'user': {'account_name': 'Guest'}}) , {}. Вызов из модуля basic_things.common_utils
+2019-09-27 11:20:44,448 DEBUG decorators.py Была вызвана функция get_message c параметрами (<socket.socket fd=468, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 54215), raddr=('127.0.0.1', 7777)>,) , {}. Вызов из модуля basic_things.common_utils
+2019-09-27 11:20:51,649 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:20:51,649 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в 2019-09-27 11:20:51.649737
+2019-09-27 11:20:51,649 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, режим работы: send
+2019-09-27 11:20:51,654 DEBUG decorators.py Была вызвана функция create_presence c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:20:51,655 DEBUG decorators.py Функция create_presence вызвана из функции 'main' в 2019-09-27 11:20:51.654608
+2019-09-27 11:20:51,655 DEBUG client.py Сформировано presence сообщение для пользователя Guest
+2019-09-27 11:20:51,655 DEBUG decorators.py Была вызвана функция send_message c параметрами (<socket.socket fd=556, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 54216), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1569572451.655605, 'user': {'account_name': 'Guest'}}) , {}. Вызов из модуля basic_things.common_utils
+2019-09-27 11:20:51,655 DEBUG decorators.py Была вызвана функция get_message c параметрами (<socket.socket fd=556, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 54216), raddr=('127.0.0.1', 7777)>,) , {}. Вызов из модуля basic_things.common_utils
+2019-09-27 11:20:51,667 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:20:51,667 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в 2019-09-27 11:20:51.667177
+2019-09-27 11:20:51,671 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, режим работы: send
+2019-09-27 11:20:51,674 DEBUG decorators.py Была вызвана функция create_presence c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:20:51,674 DEBUG decorators.py Функция create_presence вызвана из функции 'main' в 2019-09-27 11:20:51.674628
+2019-09-27 11:20:51,674 DEBUG client.py Сформировано presence сообщение для пользователя Guest
+2019-09-27 11:20:51,674 DEBUG decorators.py Была вызвана функция send_message c параметрами (<socket.socket fd=552, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 54217), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1569572451.6746285, 'user': {'account_name': 'Guest'}}) , {}. Вызов из модуля basic_things.common_utils
+2019-09-27 11:20:51,675 DEBUG decorators.py Была вызвана функция get_message c параметрами (<socket.socket fd=552, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 54217), raddr=('127.0.0.1', 7777)>,) , {}. Вызов из модуля basic_things.common_utils
+2019-09-27 11:20:51,682 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:20:51,683 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в 2019-09-27 11:20:51.683650
+2019-09-27 11:20:51,683 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:20:51,683 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в 2019-09-27 11:20:51.683650
+2019-09-27 11:20:51,684 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, режим работы: listen
+2019-09-27 11:20:51,684 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, режим работы: listen
+2019-09-27 11:20:51,687 DEBUG decorators.py Была вызвана функция create_presence c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:20:51,687 DEBUG decorators.py Функция create_presence вызвана из функции 'main' в 2019-09-27 11:20:51.687481
+2019-09-27 11:20:51,687 DEBUG decorators.py Была вызвана функция create_presence c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:20:51,687 DEBUG decorators.py Была вызвана функция send_message c параметрами (<socket.socket fd=576, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 54218), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1569572451.6874816, 'user': {'account_name': 'Guest'}}) , {}. Вызов из модуля basic_things.common_utils
+2019-09-27 11:20:51,687 DEBUG decorators.py Функция create_presence вызвана из функции 'main' в 2019-09-27 11:20:51.687481
+2019-09-27 11:20:51,687 DEBUG client.py Сформировано presence сообщение для пользователя Guest
+2019-09-27 11:20:51,688 DEBUG decorators.py Была вызвана функция get_message c параметрами (<socket.socket fd=576, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 54218), raddr=('127.0.0.1', 7777)>,) , {}. Вызов из модуля basic_things.common_utils
+2019-09-27 11:20:51,688 DEBUG decorators.py Была вызвана функция send_message c параметрами (<socket.socket fd=568, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 54219), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1569572451.6874816, 'user': {'account_name': 'Guest'}}) , {}. Вызов из модуля basic_things.common_utils
+2019-09-27 11:20:51,688 DEBUG decorators.py Была вызвана функция get_message c параметрами (<socket.socket fd=568, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 54219), raddr=('127.0.0.1', 7777)>,) , {}. Вызов из модуля basic_things.common_utils
+2019-09-27 11:20:51,689 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:20:51,689 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в 2019-09-27 11:20:51.689478
+2019-09-27 11:20:51,689 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, режим работы: listen
+2019-09-27 11:20:51,692 DEBUG decorators.py Была вызвана функция create_presence c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:20:51,692 DEBUG decorators.py Функция create_presence вызвана из функции 'main' в 2019-09-27 11:20:51.692867
+2019-09-27 11:20:51,693 DEBUG client.py Сформировано presence сообщение для пользователя Guest
+2019-09-27 11:20:51,693 DEBUG decorators.py Была вызвана функция send_message c параметрами (<socket.socket fd=576, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 54220), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1569572451.6932073, 'user': {'account_name': 'Guest'}}) , {}. Вызов из модуля basic_things.common_utils
+2019-09-27 11:20:51,693 DEBUG decorators.py Была вызвана функция get_message c параметрами (<socket.socket fd=576, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 54220), raddr=('127.0.0.1', 7777)>,) , {}. Вызов из модуля basic_things.common_utils
+2019-09-27 11:20:51,697 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:20:51,698 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в 2019-09-27 11:20:51.698843
+2019-09-27 11:20:51,699 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, режим работы: listen
+2019-09-27 11:20:51,700 DEBUG decorators.py Была вызвана функция create_presence c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:20:51,701 DEBUG decorators.py Функция create_presence вызвана из функции 'main' в 2019-09-27 11:20:51.701362
+2019-09-27 11:20:51,701 DEBUG client.py Сформировано presence сообщение для пользователя Guest
+2019-09-27 11:20:51,701 DEBUG decorators.py Была вызвана функция send_message c параметрами (<socket.socket fd=532, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 54221), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1569572451.7013628, 'user': {'account_name': 'Guest'}}) , {}. Вызов из модуля basic_things.common_utils
+2019-09-27 11:20:51,701 DEBUG decorators.py Была вызвана функция get_message c параметрами (<socket.socket fd=532, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 54221), raddr=('127.0.0.1', 7777)>,) , {}. Вызов из модуля basic_things.common_utils
+2019-09-27 11:20:51,709 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:20:51,709 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в 2019-09-27 11:20:51.709863
+2019-09-27 11:20:51,710 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, режим работы: listen
+2019-09-27 11:20:51,711 DEBUG decorators.py Была вызвана функция create_presence c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:20:51,712 DEBUG decorators.py Функция create_presence вызвана из функции 'main' в 2019-09-27 11:20:51.712895
+2019-09-27 11:20:51,712 DEBUG client.py Сформировано presence сообщение для пользователя Guest
+2019-09-27 11:20:51,712 DEBUG decorators.py Была вызвана функция send_message c параметрами (<socket.socket fd=468, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 54222), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1569572451.7128954, 'user': {'account_name': 'Guest'}}) , {}. Вызов из модуля basic_things.common_utils
+2019-09-27 11:20:51,712 DEBUG decorators.py Была вызвана функция get_message c параметрами (<socket.socket fd=468, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 54222), raddr=('127.0.0.1', 7777)>,) , {}. Вызов из модуля basic_things.common_utils
+2019-09-27 11:31:25,457 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:31:25,457 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в 2019-09-27 11:31:25.457922
+2019-09-27 11:31:25,459 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:31:25,459 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в 2019-09-27 11:31:25.459108
+2019-09-27 11:31:25,525 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:31:25,525 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в 2019-09-27 11:31:25.525813
+2019-09-27 11:31:25,525 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:31:25,525 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в 2019-09-27 11:31:25.525813
+2019-09-27 11:31:25,525 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:31:25,525 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в 2019-09-27 11:31:25.525813
+2019-09-27 11:31:25,529 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:31:25,529 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в 2019-09-27 11:31:25.529862
+2019-09-27 11:31:25,535 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:31:25,535 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в 2019-09-27 11:31:25.535761
+2019-09-27 11:33:10,056 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:33:10,056 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в 2019-09-27 11:33:10.056460
+2019-09-27 11:33:10,081 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:33:10,081 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в 2019-09-27 11:33:10.081459
+2019-09-27 11:33:10,084 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:33:10,084 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в 2019-09-27 11:33:10.084179
+2019-09-27 11:33:10,099 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:33:10,099 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в 2019-09-27 11:33:10.099274
+2019-09-27 11:33:10,099 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:33:10,099 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в 2019-09-27 11:33:10.099274
+2019-09-27 11:33:10,108 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:33:10,108 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в 2019-09-27 11:33:10.108108
+2019-09-27 11:33:10,128 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:33:10,128 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в 2019-09-27 11:33:10.128726
+2019-09-27 11:34:14,405 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:34:14,405 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в 2019-09-27 11:34:14.405908
+2019-09-27 11:34:14,447 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:34:14,448 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в 2019-09-27 11:34:14.448578
+2019-09-27 11:34:14,449 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:34:14,449 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в 2019-09-27 11:34:14.449575
+2019-09-27 11:34:14,453 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:34:14,454 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в 2019-09-27 11:34:14.454037
+2019-09-27 11:34:14,468 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:34:14,468 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в 2019-09-27 11:34:14.468526
+2019-09-27 11:34:14,469 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:34:14,469 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в 2019-09-27 11:34:14.469570
+2019-09-27 11:34:14,485 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:34:14,486 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в 2019-09-27 11:34:14.485047
+2019-09-27 11:35:02,430 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:35:02,430 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в 2019-09-27 11:35:02.430408
+2019-09-27 11:35:02,431 INFO client.py Запущен клиент с парамертами: адрес сервера: send , порт: 7777, режим работы: listen
+2019-09-27 11:35:02,431 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:35:02,431 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в 2019-09-27 11:35:02.431406
+2019-09-27 11:35:02,436 INFO client.py Запущен клиент с парамертами: адрес сервера: send , порт: 7777, режим работы: listen
+2019-09-27 11:35:02,473 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:35:02,473 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в 2019-09-27 11:35:02.473262
+2019-09-27 11:35:02,473 INFO client.py Запущен клиент с парамертами: адрес сервера: listen , порт: 7777, режим работы: listen
+2019-09-27 11:35:02,477 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:35:02,477 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в 2019-09-27 11:35:02.477279
+2019-09-27 11:35:02,477 INFO client.py Запущен клиент с парамертами: адрес сервера: listen , порт: 7777, режим работы: listen
+2019-09-27 11:35:02,482 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:35:02,483 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в 2019-09-27 11:35:02.483319
+2019-09-27 11:35:02,484 INFO client.py Запущен клиент с парамертами: адрес сервера: listen , порт: 7777, режим работы: listen
+2019-09-27 11:35:02,486 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:35:02,486 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в 2019-09-27 11:35:02.486155
+2019-09-27 11:35:02,487 INFO client.py Запущен клиент с парамертами: адрес сервера: listen , порт: 7777, режим работы: listen
+2019-09-27 11:35:02,491 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:35:02,491 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в 2019-09-27 11:35:02.491924
+2019-09-27 11:35:02,492 INFO client.py Запущен клиент с парамертами: адрес сервера: listen , порт: 7777, режим работы: listen
+2019-09-27 11:35:34,208 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:35:34,208 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в 2019-09-27 11:35:34.208579
+2019-09-27 11:35:34,221 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:35:34,222 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в 2019-09-27 11:35:34.221951
+2019-09-27 11:35:34,239 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:35:34,239 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в 2019-09-27 11:35:34.239442
+2019-09-27 11:35:34,256 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:35:34,256 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в 2019-09-27 11:35:34.256701
+2019-09-27 11:35:34,275 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:35:34,276 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в 2019-09-27 11:35:34.276940
+2019-09-27 11:35:34,284 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:35:34,284 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в 2019-09-27 11:35:34.284931
+2019-09-27 11:35:34,393 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:35:34,393 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в 2019-09-27 11:35:34.393130
+2019-09-27 11:36:39,421 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:36:39,421 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в 2019-09-27 11:36:39.421485
+2019-09-27 11:36:39,421 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:36:39,421 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в 2019-09-27 11:36:39.421485
+2019-09-27 11:36:39,425 INFO client.py Запущен клиент с парамертами: адрес сервера: send , порт: 7777, режим работы: listen
+2019-09-27 11:36:39,425 INFO client.py Запущен клиент с парамертами: адрес сервера: send , порт: 7777, режим работы: listen
+2019-09-27 11:36:39,439 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:36:39,439 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в 2019-09-27 11:36:39.439948
+2019-09-27 11:36:39,442 INFO client.py Запущен клиент с парамертами: адрес сервера: listen , порт: 7777, режим работы: listen
+2019-09-27 11:36:39,442 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:36:39,442 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в 2019-09-27 11:36:39.442050
+2019-09-27 11:36:39,444 INFO client.py Запущен клиент с парамертами: адрес сервера: listen , порт: 7777, режим работы: listen
+2019-09-27 11:36:39,449 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:36:39,449 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в 2019-09-27 11:36:39.449937
+2019-09-27 11:36:39,450 INFO client.py Запущен клиент с парамертами: адрес сервера: send , порт: 7777, режим работы: listen
+2019-09-27 11:36:39,457 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:36:39,457 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в 2019-09-27 11:36:39.457025
+2019-09-27 11:36:39,458 INFO client.py Запущен клиент с парамертами: адрес сервера: send , порт: 7777, режим работы: listen
+2019-09-27 11:36:39,459 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:36:39,459 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в 2019-09-27 11:36:39.459070
+2019-09-27 11:36:39,461 INFO client.py Запущен клиент с парамертами: адрес сервера: send , порт: 7777, режим работы: listen
+2019-09-27 11:37:16,206 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:37:16,207 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в 2019-09-27 11:37:16.206348
+2019-09-27 11:37:16,209 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, режим работы: listen
+2019-09-27 11:37:16,214 DEBUG decorators.py Была вызвана функция create_presence c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:37:16,214 DEBUG decorators.py Функция create_presence вызвана из функции 'main' в 2019-09-27 11:37:16.214164
+2019-09-27 11:37:16,214 DEBUG client.py Сформировано presence сообщение для пользователя Guest
+2019-09-27 11:37:16,215 DEBUG decorators.py Была вызвана функция send_message c параметрами (<socket.socket fd=444, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 54391), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1569573436.2141643, 'user': {'account_name': 'Guest'}}) , {}. Вызов из модуля basic_things.common_utils
+2019-09-27 11:37:16,215 DEBUG decorators.py Была вызвана функция get_message c параметрами (<socket.socket fd=444, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 54391), raddr=('127.0.0.1', 7777)>,) , {}. Вызов из модуля basic_things.common_utils
+2019-09-27 11:37:24,689 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:37:24,689 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в 2019-09-27 11:37:24.689286
+2019-09-27 11:37:24,691 INFO client.py Запущен клиент с парамертами: адрес сервера: listen , порт: 7777, режим работы: listen
+2019-09-27 11:37:24,710 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:37:24,710 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в 2019-09-27 11:37:24.710383
+2019-09-27 11:37:24,710 INFO client.py Запущен клиент с парамертами: адрес сервера: send , порт: 7777, режим работы: listen
+2019-09-27 11:37:24,716 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:37:24,716 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в 2019-09-27 11:37:24.716401
+2019-09-27 11:37:24,716 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+n
+2019-09-27 11:37:24,718 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в 2019-09-27 11:37:24.718419
+2019-09-27 11:37:24,719 INFO client.py Запущен клиент с парамертами: адрес сервера: listen , порт: 7777, режим работы: listen
+2019-09-27 11:37:24,720 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в 2019-09-27 11:37:24.719415
+2019-09-27 11:37:24,721 INFO client.py Запущен клиент с парамертами: адрес сервера: send , порт: 7777, режим работы: listen
+2019-09-27 11:37:24,722 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:37:24,722 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в 2019-09-27 11:37:24.722771
+2019-09-27 11:37:24,723 INFO client.py Запущен клиент с парамертами: адрес сервера: send , порт: 7777, режим работы: listen
+2019-09-27 11:37:24,735 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:37:24,735 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в 2019-09-27 11:37:24.735087
+2019-09-27 11:37:24,736 INFO client.py Запущен клиент с парамертами: адрес сервера: send , порт: 7777, режим работы: listen
+2019-09-27 11:38:33,276 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:38:33,276 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в 2019-09-27 11:38:33.276715
+2019-09-27 11:38:33,279 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, режим работы: send
+2019-09-27 11:38:33,317 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:38:33,317 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в 2019-09-27 11:38:33.317636
+2019-09-27 11:38:33,318 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, режим работы: listen
+2019-09-27 11:38:33,321 DEBUG decorators.py Была вызвана функция create_presence c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:38:33,321 DEBUG decorators.py Функция create_presence вызвана из функции 'main' в 2019-09-27 11:38:33.321643
+2019-09-27 11:38:33,321 DEBUG client.py Сформировано presence сообщение для пользователя Guest
+2019-09-27 11:38:33,321 DEBUG decorators.py Была вызвана функция send_message c параметрами (<socket.socket fd=560, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 54414), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1569573513.321643, 'user': {'account_name': 'Guest'}}) , {}. Вызов из модуля basic_things.common_utils
+2019-09-27 11:38:33,322 DEBUG decorators.py Была вызвана функция get_message c параметрами (<socket.socket fd=560, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 54414), raddr=('127.0.0.1', 7777)>,) , {}. Вызов из модуля basic_things.common_utils
+2019-09-27 11:38:33,322 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:38:33,322 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:38:33,322 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в 2019-09-27 11:38:33.322638
+2019-09-27 11:38:33,322 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в 2019-09-27 11:38:33.322638
+2019-09-27 11:38:33,322 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, режим работы: listen
+2019-09-27 11:38:33,322 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, режим работы: send
+2019-09-27 11:38:33,326 DEBUG decorators.py Была вызвана функция create_presence c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:38:33,326 DEBUG decorators.py Функция create_presence вызвана из функции 'main' в 2019-09-27 11:38:33.326849
+2019-09-27 11:38:33,326 DEBUG client.py Сформировано presence сообщение для пользователя Guest
+2019-09-27 11:38:33,326 DEBUG decorators.py Была вызвана функция send_message c параметрами (<socket.socket fd=580, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 54415), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1569573513.3268495, 'user': {'account_name': 'Guest'}}) , {}. Вызов из модуля basic_things.common_utils
+2019-09-27 11:38:33,326 DEBUG decorators.py Была вызвана функция get_message c параметрами (<socket.socket fd=580, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 54415), raddr=('127.0.0.1', 7777)>,) , {}. Вызов из модуля basic_things.common_utils
+2019-09-27 11:38:33,326 DEBUG decorators.py Была вызвана функция create_presence c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:38:33,327 DEBUG decorators.py Функция create_presence вызвана из функции 'main' в 2019-09-27 11:38:33.327849
+2019-09-27 11:38:33,327 DEBUG client.py Сформировано presence сообщение для пользователя Guest
+2019-09-27 11:38:33,327 DEBUG decorators.py Была вызвана функция send_message c параметрами (<socket.socket fd=584, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 54416), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1569573513.3278496, 'user': {'account_name': 'Guest'}}) , {}. Вызов из модуля basic_things.common_utils
+2019-09-27 11:38:33,327 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:38:33,327 DEBUG decorators.py Была вызвана функция get_message c параметрами (<socket.socket fd=584, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 54416), raddr=('127.0.0.1', 7777)>,) , {}. Вызов из модуля basic_things.common_utils
+2019-09-27 11:38:33,327 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в 2019-09-27 11:38:33.327849
+2019-09-27 11:38:33,329 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, режим работы: listen
+2019-09-27 11:38:33,331 DEBUG decorators.py Была вызвана функция create_presence c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:38:33,331 DEBUG decorators.py Функция create_presence вызвана из функции 'main' в 2019-09-27 11:38:33.331843
+2019-09-27 11:38:33,331 DEBUG client.py Сформировано presence сообщение для пользователя Guest
+2019-09-27 11:38:33,331 DEBUG decorators.py Была вызвана функция send_message c параметрами (<socket.socket fd=548, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 54417), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1569573513.3318431, 'user': {'account_name': 'Guest'}}) , {}. Вызов из модуля basic_things.common_utils
+2019-09-27 11:38:33,332 DEBUG decorators.py Была вызвана функция get_message c параметрами (<socket.socket fd=548, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 54417), raddr=('127.0.0.1', 7777)>,) , {}. Вызов из модуля basic_things.common_utils
+2019-09-27 11:38:33,341 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:38:33,341 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в 2019-09-27 11:38:33.341848
+2019-09-27 11:38:33,341 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, режим работы: listen
+2019-09-27 11:38:33,346 DEBUG decorators.py Была вызвана функция create_presence c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:38:33,346 DEBUG decorators.py Функция create_presence вызвана из функции 'main' в 2019-09-27 11:38:33.346941
+2019-09-27 11:38:33,346 DEBUG client.py Сформировано presence сообщение для пользователя Guest
+2019-09-27 11:38:33,346 DEBUG decorators.py Была вызвана функция send_message c параметрами (<socket.socket fd=584, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 54418), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1569573513.3469412, 'user': {'account_name': 'Guest'}}) , {}. Вызов из модуля basic_things.common_utils
+2019-09-27 11:38:33,346 DEBUG decorators.py Была вызвана функция get_message c параметрами (<socket.socket fd=584, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 54418), raddr=('127.0.0.1', 7777)>,) , {}. Вызов из модуля basic_things.common_utils
+2019-09-27 11:38:33,347 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:38:33,347 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в 2019-09-27 11:38:33.347938
+2019-09-27 11:38:33,348 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, режим работы: listen
+2019-09-27 11:38:33,350 DEBUG decorators.py Была вызвана функция create_presence c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:38:33,350 DEBUG decorators.py Функция create_presence вызвана из функции 'main' в 2019-09-27 11:38:33.350636
+2019-09-27 11:38:33,350 DEBUG client.py Сформировано presence сообщение для пользователя Guest
+2019-09-27 11:38:33,350 DEBUG decorators.py Была вызвана функция send_message c параметрами (<socket.socket fd=568, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 54419), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1569573513.3506365, 'user': {'account_name': 'Guest'}}) , {}. Вызов из модуля basic_things.common_utils
+2019-09-27 11:38:33,350 DEBUG decorators.py Была вызвана функция get_message c параметрами (<socket.socket fd=568, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 54419), raddr=('127.0.0.1', 7777)>,) , {}. Вызов из модуля basic_things.common_utils
+2019-09-27 11:38:33,784 DEBUG decorators.py Была вызвана функция create_presence c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:38:33,784 DEBUG decorators.py Функция create_presence вызвана из функции 'main' в 2019-09-27 11:38:33.784900
+2019-09-27 11:38:33,784 DEBUG client.py Сформировано presence сообщение для пользователя Guest
+2019-09-27 11:38:33,784 DEBUG decorators.py Была вызвана функция send_message c параметрами (<socket.socket fd=548, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 54413), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1569573513.7849004, 'user': {'account_name': 'Guest'}}) , {}. Вызов из модуля basic_things.common_utils
+2019-09-27 11:38:33,784 DEBUG decorators.py Была вызвана функция get_message c параметрами (<socket.socket fd=548, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 54413), raddr=('127.0.0.1', 7777)>,) , {}. Вызов из модуля basic_things.common_utils
+2019-09-27 11:42:20,895 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:42:20,895 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в 2019-09-27 11:42:20.895604
+2019-09-27 11:42:20,898 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, режим работы: send
+2019-09-27 11:42:20,901 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:42:20,909 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в 2019-09-27 11:42:20.909400
+2019-09-27 11:42:20,909 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:42:20,909 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в 2019-09-27 11:42:20.909930
+2019-09-27 11:42:20,910 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, режим работы: listen
+2019-09-27 11:42:20,910 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, режим работы: listen
+2019-09-27 11:42:20,913 DEBUG decorators.py Была вызвана функция create_presence c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:42:20,913 DEBUG decorators.py Функция create_presence вызвана из функции 'main' в 2019-09-27 11:42:20.913783
+2019-09-27 11:42:20,913 DEBUG client.py Сформировано presence сообщение для пользователя Guest
+2019-09-27 11:42:20,914 DEBUG decorators.py Была вызвана функция create_presence c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:42:20,914 DEBUG decorators.py Функция create_presence вызвана из функции 'main' в 2019-09-27 11:42:20.914785
+2019-09-27 11:42:20,913 DEBUG decorators.py Была вызвана функция send_message c параметрами (<socket.socket fd=508, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 54440), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1569573740.9137838, 'user': {'account_name': 'Guest'}}) , {}. Вызов из модуля basic_things.common_utils
+2019-09-27 11:42:20,914 DEBUG client.py Сформировано presence сообщение для пользователя Guest
+2019-09-27 11:42:20,914 DEBUG decorators.py Была вызвана функция send_message c параметрами (<socket.socket fd=508, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 54441), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1569573740.9147859, 'user': {'account_name': 'Guest'}}) , {}. Вызов из модуля basic_things.common_utils
+2019-09-27 11:42:20,914 DEBUG decorators.py Была вызвана функция get_message c параметрами (<socket.socket fd=508, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 54440), raddr=('127.0.0.1', 7777)>,) , {}. Вызов из модуля basic_things.common_utils
+2019-09-27 11:42:20,914 DEBUG decorators.py Была вызвана функция get_message c параметрами (<socket.socket fd=508, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 54441), raddr=('127.0.0.1', 7777)>,) , {}. Вызов из модуля basic_things.common_utils
+2019-09-27 11:42:20,928 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:42:20,929 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в 2019-09-27 11:42:20.928055
+2019-09-27 11:42:20,930 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, режим работы: send
+2019-09-27 11:42:20,932 DEBUG decorators.py Была вызвана функция create_presence c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:42:20,932 DEBUG decorators.py Функция create_presence вызвана из функции 'main' в 2019-09-27 11:42:20.932549
+2019-09-27 11:42:20,932 DEBUG client.py Сформировано presence сообщение для пользователя Guest
+2019-09-27 11:42:20,932 DEBUG decorators.py Была вызвана функция send_message c параметрами (<socket.socket fd=592, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 54442), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1569573740.9325492, 'user': {'account_name': 'Guest'}}) , {}. Вызов из модуля basic_things.common_utils
+2019-09-27 11:42:20,933 DEBUG decorators.py Была вызвана функция get_message c параметрами (<socket.socket fd=592, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 54442), raddr=('127.0.0.1', 7777)>,) , {}. Вызов из модуля basic_things.common_utils
+2019-09-27 11:42:21,402 DEBUG decorators.py Была вызвана функция create_presence c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:42:21,402 DEBUG decorators.py Функция create_presence вызвана из функции 'main' в 2019-09-27 11:42:21.402233
+2019-09-27 11:42:21,402 DEBUG client.py Сформировано presence сообщение для пользователя Guest
+2019-09-27 11:42:21,403 DEBUG decorators.py Была вызвана функция send_message c параметрами (<socket.socket fd=480, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 54439), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1569573741.4022338, 'user': {'account_name': 'Guest'}}) , {}. Вызов из модуля basic_things.common_utils
+2019-09-27 11:42:21,403 DEBUG decorators.py Была вызвана функция get_message c параметрами (<socket.socket fd=480, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 54439), raddr=('127.0.0.1', 7777)>,) , {}. Вызов из модуля basic_things.common_utils
+2019-09-27 11:44:44,066 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:44:44,066 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в 2019-09-27 11:44:44.066076
+2019-09-27 11:44:44,076 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:44:44,076 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:44:44,076 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в 2019-09-27 11:44:44.076702
+2019-09-27 11:44:44,076 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в 2019-09-27 11:44:44.076702
+2019-09-27 11:44:44,084 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:44:44,084 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в 2019-09-27 11:44:44.084733
+2019-09-27 11:46:51,235 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:46:51,235 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в 2019-09-27 11:46:51.235819
+2019-09-27 11:46:51,253 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:46:51,253 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в 2019-09-27 11:46:51.253418
+2019-09-27 11:46:51,253 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:46:51,253 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в 2019-09-27 11:46:51.253418
+2019-09-27 11:46:51,266 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:46:51,266 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в 2019-09-27 11:46:51.266853
+2019-09-27 11:47:13,501 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:47:13,504 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в 2019-09-27 11:47:13.504767
+2019-09-27 11:47:13,536 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:47:13,536 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в 2019-09-27 11:47:13.536414
+2019-09-27 11:47:13,539 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:47:13,540 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в 2019-09-27 11:47:13.539385
+2019-09-27 11:47:13,544 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:47:13,544 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в 2019-09-27 11:47:13.544420
+2019-09-27 11:48:13,706 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:48:13,706 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в 2019-09-27 11:48:13.706067
+2019-09-27 11:48:13,725 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:48:13,725 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в 2019-09-27 11:48:13.725329
+2019-09-27 11:48:13,725 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:48:13,725 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в 2019-09-27 11:48:13.725329
+2019-09-27 11:48:13,733 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:48:13,733 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в 2019-09-27 11:48:13.733833
+2019-09-27 11:48:44,489 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:48:44,489 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в 2019-09-27 11:48:44.489013
+2019-09-27 11:48:44,489 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, режим работы: send
+2019-09-27 11:48:44,489 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:48:44,489 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в 2019-09-27 11:48:44.489013
+2019-09-27 11:48:44,503 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, режим работы: send
+2019-09-27 11:48:44,506 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:48:44,506 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в 2019-09-27 11:48:44.506465
+2019-09-27 11:48:44,506 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, режим работы: listen
+2019-09-27 11:48:44,517 DEBUG decorators.py Была вызвана функция create_presence c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:48:44,517 DEBUG decorators.py Функция create_presence вызвана из функции 'main' в 2019-09-27 11:48:44.517789
+2019-09-27 11:48:44,517 DEBUG client.py Сформировано presence сообщение для пользователя Guest
+2019-09-27 11:48:44,517 DEBUG decorators.py Была вызвана функция send_message c параметрами (<socket.socket fd=564, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 54482), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1569574124.5177896, 'user': {'account_name': 'Guest'}}) , {}. Вызов из модуля basic_things.common_utils
+2019-09-27 11:48:44,517 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:48:44,517 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в 2019-09-27 11:48:44.517789
+2019-09-27 11:48:44,518 DEBUG decorators.py Была вызвана функция get_message c параметрами (<socket.socket fd=564, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 54482), raddr=('127.0.0.1', 7777)>,) , {}. Вызов из модуля basic_things.common_utils
+2019-09-27 11:48:44,519 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, режим работы: listen
+2019-09-27 11:48:44,522 DEBUG decorators.py Была вызвана функция create_presence c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:48:44,523 DEBUG decorators.py Функция create_presence вызвана из функции 'main' в 2019-09-27 11:48:44.523716
+2019-09-27 11:48:44,523 DEBUG client.py Сформировано presence сообщение для пользователя Guest
+2019-09-27 11:48:44,523 DEBUG decorators.py Была вызвана функция send_message c параметрами (<socket.socket fd=508, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 54483), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1569574124.5237162, 'user': {'account_name': 'Guest'}}) , {}. Вызов из модуля basic_things.common_utils
+2019-09-27 11:48:44,523 DEBUG decorators.py Была вызвана функция get_message c параметрами (<socket.socket fd=508, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 54483), raddr=('127.0.0.1', 7777)>,) , {}. Вызов из модуля basic_things.common_utils
+2019-09-27 11:48:45,004 DEBUG decorators.py Была вызвана функция create_presence c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:48:45,005 DEBUG decorators.py Функция create_presence вызвана из функции 'main' в 2019-09-27 11:48:45.004630
+2019-09-27 11:48:45,005 DEBUG client.py Сформировано presence сообщение для пользователя Guest
+2019-09-27 11:48:45,005 DEBUG decorators.py Была вызвана функция send_message c параметрами (<socket.socket fd=616, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 54480), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1569574125.0056272, 'user': {'account_name': 'Guest'}}) , {}. Вызов из модуля basic_things.common_utils
+2019-09-27 11:48:45,006 DEBUG decorators.py Была вызвана функция get_message c параметрами (<socket.socket fd=616, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 54480), raddr=('127.0.0.1', 7777)>,) , {}. Вызов из модуля basic_things.common_utils
+2019-09-27 11:48:45,021 DEBUG decorators.py Была вызвана функция create_presence c параметрами () , {}. Вызов из модуля __main__
+2019-09-27 11:48:45,022 DEBUG decorators.py Функция create_presence вызвана из функции 'main' в 2019-09-27 11:48:45.022366
+2019-09-27 11:48:45,022 DEBUG client.py Сформировано presence сообщение для пользователя Guest
+2019-09-27 11:48:45,023 DEBUG decorators.py Была вызвана функция send_message c параметрами (<socket.socket fd=536, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 54481), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1569574125.0223663, 'user': {'account_name': 'Guest'}}) , {}. Вызов из модуля basic_things.common_utils
+2019-09-27 11:48:45,023 DEBUG decorators.py Была вызвана функция get_message c параметрами (<socket.socket fd=536, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 54481), raddr=('127.0.0.1', 7777)>,) , {}. Вызов из модуля basic_things.common_utils
+2019-09-29 19:57:22,344 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-29 19:57:22,344 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в 2019-09-29 19:57:22.344211
+2019-09-29 19:57:22,344 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, режим работы: send
+2019-09-29 19:57:22,344 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-29 19:57:22,344 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в 2019-09-29 19:57:22.344211
+2019-09-29 19:57:22,344 DEBUG decorators.py Была вызвана функция create_presence c параметрами () , {}. Вызов из модуля __main__
+2019-09-29 19:57:22,344 DEBUG decorators.py Функция create_presence вызвана из функции 'main' в 2019-09-29 19:57:22.344211
+2019-09-29 19:57:22,344 DEBUG client.py Сформировано presence сообщение для пользователя Guest
+2019-09-29 19:57:22,344 DEBUG decorators.py Была вызвана функция send_message c параметрами (<socket.socket fd=580, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 60040), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1569776242.344211, 'user': {'account_name': 'Guest'}}) , {}. Вызов из модуля basic_things.common_utils
+2019-09-29 19:57:22,344 DEBUG decorators.py Была вызвана функция get_message c параметрами (<socket.socket fd=580, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 60040), raddr=('127.0.0.1', 7777)>,) , {}. Вызов из модуля basic_things.common_utils
+2019-09-29 19:57:22,344 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, режим работы: listen
+2019-09-29 19:57:22,344 DEBUG decorators.py Была вызвана функция create_presence c параметрами () , {}. Вызов из модуля __main__
+2019-09-29 19:57:22,344 DEBUG decorators.py Функция create_presence вызвана из функции 'main' в 2019-09-29 19:57:22.344211
+2019-09-29 19:57:22,344 DEBUG client.py Сформировано presence сообщение для пользователя Guest
+2019-09-29 19:57:22,344 DEBUG decorators.py Была вызвана функция send_message c параметрами (<socket.socket fd=508, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 60041), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1569776242.344211, 'user': {'account_name': 'Guest'}}) , {}. Вызов из модуля basic_things.common_utils
+2019-09-29 19:57:22,344 DEBUG decorators.py Была вызвана функция get_message c параметрами (<socket.socket fd=508, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 60041), raddr=('127.0.0.1', 7777)>,) , {}. Вызов из модуля basic_things.common_utils
+2019-09-29 19:57:22,359 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-29 19:57:22,359 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в 2019-09-29 19:57:22.359856
+2019-09-29 19:57:22,374 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, режим работы: listen
+2019-09-29 19:57:22,379 DEBUG decorators.py Была вызвана функция create_presence c параметрами () , {}. Вызов из модуля __main__
+2019-09-29 19:57:22,379 DEBUG decorators.py Функция create_presence вызвана из функции 'main' в 2019-09-29 19:57:22.379085
+2019-09-29 19:57:22,379 DEBUG client.py Сформировано presence сообщение для пользователя Guest
+2019-09-29 19:57:22,379 DEBUG decorators.py Была вызвана функция send_message c параметрами (<socket.socket fd=572, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 60042), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1569776242.3790853, 'user': {'account_name': 'Guest'}}) , {}. Вызов из модуля basic_things.common_utils
+2019-09-29 19:57:22,380 DEBUG decorators.py Была вызвана функция get_message c параметрами (<socket.socket fd=572, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 60042), raddr=('127.0.0.1', 7777)>,) , {}. Вызов из модуля basic_things.common_utils
+2019-09-29 19:57:22,431 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-29 19:57:22,431 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в 2019-09-29 19:57:22.431555
+2019-09-29 19:57:22,442 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-29 19:57:22,442 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в 2019-09-29 19:57:22.442003
+2019-09-29 19:57:22,442 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, режим работы: listen
+2019-09-29 19:57:22,442 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, режим работы: send
+2019-09-29 19:57:22,442 DEBUG decorators.py Была вызвана функция create_presence c параметрами () , {}. Вызов из модуля __main__
+2019-09-29 19:57:22,442 DEBUG decorators.py Функция create_presence вызвана из функции 'main' в 2019-09-29 19:57:22.442003
+2019-09-29 19:57:22,442 DEBUG client.py Сформировано presence сообщение для пользователя Guest
+2019-09-29 19:57:22,442 DEBUG decorators.py Была вызвана функция send_message c параметрами (<socket.socket fd=560, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 60043), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1569776242.4420037, 'user': {'account_name': 'Guest'}}) , {}. Вызов из модуля basic_things.common_utils
+2019-09-29 19:57:22,442 DEBUG decorators.py Была вызвана функция get_message c параметрами (<socket.socket fd=560, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 60043), raddr=('127.0.0.1', 7777)>,) , {}. Вызов из модуля basic_things.common_utils
+2019-09-29 19:57:22,442 DEBUG decorators.py Была вызвана функция create_presence c параметрами () , {}. Вызов из модуля __main__
+2019-09-29 19:57:22,442 DEBUG decorators.py Функция create_presence вызвана из функции 'main' в 2019-09-29 19:57:22.442003
+2019-09-29 19:57:22,442 DEBUG client.py Сформировано presence сообщение для пользователя Guest
+2019-09-29 19:57:22,442 DEBUG decorators.py Была вызвана функция send_message c параметрами (<socket.socket fd=596, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 60044), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1569776242.4420037, 'user': {'account_name': 'Guest'}}) , {}. Вызов из модуля basic_things.common_utils
+2019-09-29 19:57:22,442 DEBUG decorators.py Была вызвана функция get_message c параметрами (<socket.socket fd=596, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 60044), raddr=('127.0.0.1', 7777)>,) , {}. Вызов из модуля basic_things.common_utils
+2019-09-29 19:57:22,462 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-29 19:57:22,462 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в 2019-09-29 19:57:22.462621
+2019-09-29 19:57:22,462 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, режим работы: listen
+2019-09-29 19:57:22,462 DEBUG decorators.py Была вызвана функция create_presence c параметрами () , {}. Вызов из модуля __main__
+2019-09-29 19:57:22,462 DEBUG decorators.py Функция create_presence вызвана из функции 'main' в 2019-09-29 19:57:22.462621
+2019-09-29 19:57:22,462 DEBUG client.py Сформировано presence сообщение для пользователя Guest
+2019-09-29 19:57:22,462 DEBUG decorators.py Была вызвана функция send_message c параметрами (<socket.socket fd=660, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 60045), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1569776242.4626217, 'user': {'account_name': 'Guest'}}) , {}. Вызов из модуля basic_things.common_utils
+2019-09-29 19:57:22,462 DEBUG decorators.py Была вызвана функция get_message c параметрами (<socket.socket fd=660, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 60045), raddr=('127.0.0.1', 7777)>,) , {}. Вызов из модуля basic_things.common_utils
+2019-09-29 19:57:22,494 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-29 19:57:22,494 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в 2019-09-29 19:57:22.494582
+2019-09-29 19:57:22,494 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, режим работы: listen
+2019-09-29 19:57:22,503 DEBUG decorators.py Была вызвана функция create_presence c параметрами () , {}. Вызов из модуля __main__
+2019-09-29 19:57:22,503 DEBUG decorators.py Функция create_presence вызвана из функции 'main' в 2019-09-29 19:57:22.503685
+2019-09-29 19:57:22,503 DEBUG client.py Сформировано presence сообщение для пользователя Guest
+2019-09-29 19:57:22,503 DEBUG decorators.py Была вызвана функция send_message c параметрами (<socket.socket fd=572, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 60046), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1569776242.5036852, 'user': {'account_name': 'Guest'}}) , {}. Вызов из модуля basic_things.common_utils
+2019-09-29 19:57:22,504 DEBUG decorators.py Была вызвана функция get_message c параметрами (<socket.socket fd=572, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 60046), raddr=('127.0.0.1', 7777)>,) , {}. Вызов из модуля basic_things.common_utils
+2019-09-29 19:58:27,045 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-29 19:58:27,059 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в 2019-09-29 19:58:27.059294
+2019-09-29 19:58:27,061 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, режим работы: send
+2019-09-29 19:58:27,067 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-29 19:58:27,067 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в 2019-09-29 19:58:27.067803
+2019-09-29 19:58:27,071 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, режим работы: listen
+2019-09-29 19:58:27,097 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-29 19:58:27,097 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в 2019-09-29 19:58:27.097287
+2019-09-29 19:58:27,099 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, режим работы: send
+2019-09-29 19:58:27,101 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-29 19:58:27,101 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в 2019-09-29 19:58:27.101543
+2019-09-29 19:58:27,102 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, режим работы: listen
+2019-09-29 19:58:27,123 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-29 19:58:27,123 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в 2019-09-29 19:58:27.123478
+2019-09-29 19:58:27,138 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, режим работы: listen
+2019-09-29 19:58:27,138 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-29 19:58:27,138 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в 2019-09-29 19:58:27.138557
+2019-09-29 19:58:27,138 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, режим работы: listen
+2019-09-29 19:58:27,138 DEBUG decorators.py Была вызвана функция create_arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-29 19:58:27,138 DEBUG decorators.py Функция create_arg_parser вызвана из функции 'main' в 2019-09-29 19:58:27.138557
+2019-09-29 19:58:27,138 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, режим работы: listen
+2019-09-29 19:58:27,151 DEBUG decorators.py Была вызвана функция create_presence c параметрами () , {}. Вызов из модуля __main__
+2019-09-29 19:58:27,151 DEBUG decorators.py Функция create_presence вызвана из функции 'main' в 2019-09-29 19:58:27.151092
+2019-09-29 19:58:27,151 DEBUG client.py Сформировано presence сообщение для пользователя Guest
+2019-09-29 19:58:27,151 DEBUG decorators.py Была вызвана функция send_message c параметрами (<socket.socket fd=592, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 60062), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1569776307.1510925, 'user': {'account_name': 'Guest'}}) , {}. Вызов из модуля basic_things.common_utils
+2019-09-29 19:58:27,152 DEBUG decorators.py Была вызвана функция get_message c параметрами (<socket.socket fd=592, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 60062), raddr=('127.0.0.1', 7777)>,) , {}. Вызов из модуля basic_things.common_utils
+2019-09-29 19:58:27,571 DEBUG decorators.py Была вызвана функция create_presence c параметрами () , {}. Вызов из модуля __main__
+2019-09-29 19:58:27,571 DEBUG decorators.py Функция create_presence вызвана из функции 'main' в 2019-09-29 19:58:27.571167
+2019-09-29 19:58:27,571 DEBUG client.py Сформировано presence сообщение для пользователя Guest
+2019-09-29 19:58:27,572 DEBUG decorators.py Была вызвана функция send_message c параметрами (<socket.socket fd=516, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 60056), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1569776307.5711675, 'user': {'account_name': 'Guest'}}) , {}. Вызов из модуля basic_things.common_utils
+2019-09-29 19:58:27,572 DEBUG decorators.py Была вызвана функция get_message c параметрами (<socket.socket fd=516, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 60056), raddr=('127.0.0.1', 7777)>,) , {}. Вызов из модуля basic_things.common_utils
+2019-09-29 19:58:27,587 DEBUG decorators.py Была вызвана функция create_presence c параметрами () , {}. Вызов из модуля __main__
+2019-09-29 19:58:27,587 DEBUG decorators.py Функция create_presence вызвана из функции 'main' в 2019-09-29 19:58:27.587831
+2019-09-29 19:58:27,588 DEBUG client.py Сформировано presence сообщение для пользователя Guest
+2019-09-29 19:58:27,588 DEBUG decorators.py Была вызвана функция send_message c параметрами (<socket.socket fd=568, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 60057), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1569776307.5888295, 'user': {'account_name': 'Guest'}}) , {}. Вызов из модуля basic_things.common_utils
+2019-09-29 19:58:27,588 DEBUG decorators.py Была вызвана функция get_message c параметрами (<socket.socket fd=568, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 60057), raddr=('127.0.0.1', 7777)>,) , {}. Вызов из модуля basic_things.common_utils
+2019-09-29 19:58:27,604 DEBUG decorators.py Была вызвана функция create_presence c параметрами () , {}. Вызов из модуля __main__
+2019-09-29 19:58:27,604 DEBUG decorators.py Была вызвана функция create_presence c параметрами () , {}. Вызов из модуля __main__
+2019-09-29 19:58:27,605 DEBUG decorators.py Функция create_presence вызвана из функции 'main' в 2019-09-29 19:58:27.604627
+2019-09-29 19:58:27,605 DEBUG decorators.py Функция create_presence вызвана из функции 'main' в 2019-09-29 19:58:27.605623
+2019-09-29 19:58:27,605 DEBUG client.py Сформировано presence сообщение для пользователя Guest
+2019-09-29 19:58:27,606 DEBUG decorators.py Была вызвана функция send_message c параметрами (<socket.socket fd=496, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 60058), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1569776307.605623, 'user': {'account_name': 'Guest'}}) , {}. Вызов из модуля basic_things.common_utils
+2019-09-29 19:58:27,606 DEBUG decorators.py Была вызвана функция send_message c параметрами (<socket.socket fd=560, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 60059), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1569776307.605623, 'user': {'account_name': 'Guest'}}) , {}. Вызов из модуля basic_things.common_utils
+2019-09-29 19:58:27,606 DEBUG decorators.py Была вызвана функция get_message c параметрами (<socket.socket fd=496, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 60058), raddr=('127.0.0.1', 7777)>,) , {}. Вызов из модуля basic_things.common_utils
+2019-09-29 19:58:27,606 DEBUG decorators.py Была вызвана функция get_message c параметрами (<socket.socket fd=560, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 60059), raddr=('127.0.0.1', 7777)>,) , {}. Вызов из модуля basic_things.common_utils
+2019-09-29 19:58:27,654 DEBUG decorators.py Была вызвана функция create_presence c параметрами () , {}. Вызов из модуля __main__
+2019-09-29 19:58:27,654 DEBUG decorators.py Была вызвана функция create_presence c параметрами () , {}. Вызов из модуля __main__
+2019-09-29 19:58:27,654 DEBUG client.py Сформировано presence сообщение для пользователя Guest
+2019-09-29 19:58:27,654 DEBUG decorators.py Функция create_presence вызвана из функции 'main' в 2019-09-29 19:58:27.654428
+2019-09-29 19:58:27,655 DEBUG client.py Сформировано presence сообщение для пользователя Guest
+2019-09-29 19:58:27,655 DEBUG decorators.py Была вызвана функция send_message c параметрами (<socket.socket fd=532, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 60060), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1569776307.6544287, 'user': {'account_name': 'Guest'}}) , {}. Вызов из модуля basic_things.common_utils
+2019-09-29 19:58:27,655 DEBUG decorators.py Была вызвана функция send_message c параметрами (<socket.socket fd=568, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 60061), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1569776307.6554263, 'user': {'account_name': 'Guest'}}) , {}. Вызов из модуля basic_things.common_utils
+2019-09-29 19:58:27,655 DEBUG decorators.py Была вызвана функция get_message c параметрами (<socket.socket fd=532, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 60060), raddr=('127.0.0.1', 7777)>,) , {}. Вызов из модуля basic_things.common_utils
+2019-09-29 19:58:27,655 DEBUG decorators.py Была вызвана функция get_message c параметрами (<socket.socket fd=568, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 60061), raddr=('127.0.0.1', 7777)>,) , {}. Вызов из модуля basic_things.common_utils
+2019-09-30 20:21:33,910 DEBUG decorators.py Была вызвана функция log_saver c параметрами () , {}. Вызов из модуля decorators
+2019-09-30 20:21:33,910 DEBUG decorators.py Была вызвана функция arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-30 20:21:33,910 DEBUG decorators.py Функция arg_parser вызвана из функции 'main' в 2019-09-30 20:21:33.910919
+2019-09-30 20:21:33,912 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test3
+2019-09-30 20:21:33,914 DEBUG decorators.py Была вызвана функция create_presence c параметрами ('test3',) , {}. Вызов из модуля __main__
+2019-09-30 20:21:33,914 DEBUG decorators.py Функция create_presence вызвана из функции 'main' в 2019-09-30 20:21:33.914948
+2019-09-30 20:21:33,915 DEBUG client.py Сформировано presence сообщение для пользователя test3
+2019-09-30 20:21:33,915 DEBUG decorators.py Была вызвана функция send_message c параметрами (<socket.socket fd=520, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 61434), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1569864093.915946, 'user': {'account_name': 'test3'}}) , {}. Вызов из модуля basic_things.common_utils
+2019-09-30 20:21:33,915 DEBUG decorators.py Была вызвана функция get_message c параметрами (<socket.socket fd=520, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 61434), raddr=('127.0.0.1', 7777)>,) , {}. Вызов из модуля basic_things.common_utils
+2019-09-30 20:21:33,916 DEBUG decorators.py Была вызвана функция log_saver c параметрами () , {}. Вызов из модуля decorators
+2019-09-30 20:21:33,920 DEBUG decorators.py Была вызвана функция arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-30 20:21:33,920 DEBUG decorators.py Функция arg_parser вызвана из функции 'main' в 2019-09-30 20:21:33.920006
+2019-09-30 20:21:33,921 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test1
+2019-09-30 20:21:33,924 DEBUG decorators.py Была вызвана функция create_presence c параметрами ('test1',) , {}. Вызов из модуля __main__
+2019-09-30 20:21:33,925 DEBUG decorators.py Функция create_presence вызвана из функции 'main' в 2019-09-30 20:21:33.925264
+2019-09-30 20:21:33,925 DEBUG client.py Сформировано presence сообщение для пользователя test1
+2019-09-30 20:21:33,925 DEBUG decorators.py Была вызвана функция send_message c параметрами (<socket.socket fd=520, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 61435), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1569864093.9252644, 'user': {'account_name': 'test1'}}) , {}. Вызов из модуля basic_things.common_utils
+2019-09-30 20:21:33,926 DEBUG decorators.py Была вызвана функция get_message c параметрами (<socket.socket fd=520, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 61435), raddr=('127.0.0.1', 7777)>,) , {}. Вызов из модуля basic_things.common_utils
+2019-09-30 20:21:33,927 DEBUG decorators.py Была вызвана функция process_response_ans c параметрами ({'response': 200},) , {}. Вызов из модуля __main__
+2019-09-30 20:21:33,927 DEBUG decorators.py Функция process_response_ans вызвана из функции 'main' в 2019-09-30 20:21:33.927252
+2019-09-30 20:21:33,927 DEBUG client.py Разбор приветственного сообщения от сервера: {'response': 200}
+2019-09-30 20:21:33,927 INFO client.py Установлено соединение с сервером. Ответ сервера: 200 : OK
+2019-09-30 20:21:33,929 DEBUG decorators.py Была вызвана функция get_message c параметрами (<socket.socket fd=520, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 61434), raddr=('127.0.0.1', 7777)>,) , {}. Вызов из модуля basic_things.common_utils
+2019-09-30 20:21:33,929 DEBUG client.py Запущены процессы
+2019-09-30 20:21:33,929 DEBUG decorators.py Была вызвана функция user_interactive c параметрами (<socket.socket fd=520, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 61434), raddr=('127.0.0.1', 7777)>, 'test3') , {}. Вызов из модуля __main__
+2019-09-30 20:21:33,929 DEBUG decorators.py Функция user_interactive вызвана из функции 'main' в 2019-09-30 20:21:33.929374
+2019-09-30 20:21:34,437 DEBUG decorators.py Была вызвана функция process_response_ans c параметрами ({'response': 200},) , {}. Вызов из модуля __main__
+2019-09-30 20:21:34,438 DEBUG decorators.py Функция process_response_ans вызвана из функции 'main' в 2019-09-30 20:21:34.438989
+2019-09-30 20:21:34,439 DEBUG client.py Разбор приветственного сообщения от сервера: {'response': 200}
+2019-09-30 20:21:34,439 INFO client.py Установлено соединение с сервером. Ответ сервера: 200 : OK
+2019-09-30 20:21:34,443 DEBUG decorators.py Была вызвана функция get_message c параметрами (<socket.socket fd=520, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 61435), raddr=('127.0.0.1', 7777)>,) , {}. Вызов из модуля basic_things.common_utils
+2019-09-30 20:21:34,443 DEBUG client.py Запущены процессы
+2019-09-30 20:21:34,443 DEBUG decorators.py Была вызвана функция user_interactive c параметрами (<socket.socket fd=520, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 61435), raddr=('127.0.0.1', 7777)>, 'test1') , {}. Вызов из модуля __main__
+2019-09-30 20:21:34,443 DEBUG decorators.py Функция user_interactive вызвана из функции 'main' в 2019-09-30 20:21:34.443539
+2019-09-30 20:21:59,873 DEBUG decorators.py Была вызвана функция create_message c параметрами (<socket.socket fd=520, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 61435), raddr=('127.0.0.1', 7777)>, 'test1') , {}. Вызов из модуля __main__
+2019-09-30 20:21:59,873 DEBUG decorators.py Функция create_message вызвана из функции 'main' в 2019-09-30 20:21:59.873308
+2019-09-30 20:22:29,601 DEBUG client.py Сформирован словарь сообщения: {'action': 'message', 'from': 'test1', 'to': 'user', 'time': 1569864149.6012864, 'message_text': 'My fucking messenger is working'}
+2019-09-30 20:22:29,616 DEBUG decorators.py Была вызвана функция send_message c параметрами (<socket.socket fd=520, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 61435), raddr=('127.0.0.1', 7777)>, {'action': 'message', 'from': 'test1', 'to': 'user', 'time': 1569864149.6012864, 'message_text': 'My fucking messenger is working'}) , {}. Вызов из модуля basic_things.common_utils
+2019-09-30 20:22:29,616 INFO client.py Отправлено сообщение для пользователя user
+2019-09-30 20:22:47,952 DEBUG decorators.py Была вызвана функция create_message c параметрами (<socket.socket fd=520, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 61435), raddr=('127.0.0.1', 7777)>, 'test1') , {}. Вызов из модуля __main__
+2019-09-30 20:22:47,952 DEBUG decorators.py Функция create_message вызвана из функции 'main' в 2019-09-30 20:22:47.952253
+2019-09-30 20:22:55,896 DEBUG client.py Сформирован словарь сообщения: {'action': 'message', 'from': 'test1', 'to': 'Guest', 'time': 1569864175.896952, 'message_text': 'hello'}
+2019-09-30 20:22:55,896 DEBUG decorators.py Была вызвана функция send_message c параметрами (<socket.socket fd=520, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 61435), raddr=('127.0.0.1', 7777)>, {'action': 'message', 'from': 'test1', 'to': 'Guest', 'time': 1569864175.896952, 'message_text': 'hello'}) , {}. Вызов из модуля basic_things.common_utils
+2019-09-30 20:22:55,896 INFO client.py Отправлено сообщение для пользователя Guest
+2019-09-30 20:22:59,396 CRITICAL client.py Потеряно соединение с сервером.
+2019-09-30 20:22:59,396 CRITICAL client.py Потеряно соединение с сервером.
+2019-09-30 20:23:54,510 DEBUG decorators.py Была вызвана функция log_saver c параметрами () , {}. Вызов из модуля decorators
+2019-09-30 20:23:54,510 DEBUG decorators.py Была вызвана функция arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-30 20:23:54,510 DEBUG decorators.py Функция arg_parser вызвана из функции 'main' в 2019-09-30 20:23:54.510848
+2019-09-30 20:23:54,510 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test3
+2019-09-30 20:23:54,514 DEBUG decorators.py Была вызвана функция create_presence c параметрами ('test3',) , {}. Вызов из модуля __main__
+2019-09-30 20:23:54,514 DEBUG decorators.py Функция create_presence вызвана из функции 'main' в 2019-09-30 20:23:54.514396
+2019-09-30 20:23:54,514 DEBUG client.py Сформировано presence сообщение для пользователя test3
+2019-09-30 20:23:54,514 DEBUG decorators.py Была вызвана функция send_message c параметрами (<socket.socket fd=528, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 61441), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1569864234.514396, 'user': {'account_name': 'test3'}}) , {}. Вызов из модуля basic_things.common_utils
+2019-09-30 20:23:54,514 DEBUG decorators.py Была вызвана функция get_message c параметрами (<socket.socket fd=528, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 61441), raddr=('127.0.0.1', 7777)>,) , {}. Вызов из модуля basic_things.common_utils
+2019-09-30 20:23:54,515 DEBUG decorators.py Была вызвана функция log_saver c параметрами () , {}. Вызов из модуля decorators
+2019-09-30 20:23:54,516 DEBUG decorators.py Была вызвана функция arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-30 20:23:54,516 DEBUG decorators.py Функция arg_parser вызвана из функции 'main' в 2019-09-30 20:23:54.516392
+2019-09-30 20:23:54,516 DEBUG decorators.py Была вызвана функция log_saver c параметрами () , {}. Вызов из модуля decorators
+2019-09-30 20:23:54,516 DEBUG decorators.py Была вызвана функция arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-30 20:23:54,516 DEBUG decorators.py Функция arg_parser вызвана из функции 'main' в 2019-09-30 20:23:54.516392
+2019-09-30 20:23:54,516 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test2
+2019-09-30 20:23:54,516 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test1
+2019-09-30 20:23:54,518 DEBUG decorators.py Была вызвана функция create_presence c параметрами ('test2',) , {}. Вызов из модуля __main__
+2019-09-30 20:23:54,518 DEBUG decorators.py Была вызвана функция create_presence c параметрами ('test1',) , {}. Вызов из модуля __main__
+2019-09-30 20:23:54,518 DEBUG decorators.py Функция create_presence вызвана из функции 'main' в 2019-09-30 20:23:54.518538
+2019-09-30 20:23:54,518 DEBUG decorators.py Функция create_presence вызвана из функции 'main' в 2019-09-30 20:23:54.518538
+2019-09-30 20:23:54,518 DEBUG client.py Сформировано presence сообщение для пользователя test2
+2019-09-30 20:23:54,518 DEBUG client.py Сформировано presence сообщение для пользователя test1
+2019-09-30 20:23:54,518 DEBUG decorators.py Была вызвана функция send_message c параметрами (<socket.socket fd=516, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 61443), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1569864234.5185385, 'user': {'account_name': 'test1'}}) , {}. Вызов из модуля basic_things.common_utils
+2019-09-30 20:23:54,518 DEBUG decorators.py Была вызвана функция get_message c параметрами (<socket.socket fd=576, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 61442), raddr=('127.0.0.1', 7777)>,) , {}. Вызов из модуля basic_things.common_utils
+2019-09-30 20:23:54,518 DEBUG decorators.py Была вызвана функция get_message c параметрами (<socket.socket fd=516, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 61443), raddr=('127.0.0.1', 7777)>,) , {}. Вызов из модуля basic_things.common_utils
+2019-09-30 20:23:54,519 DEBUG decorators.py Была вызвана функция process_response_ans c параметрами ({'response': 200},) , {}. Вызов из модуля __main__
+2019-09-30 20:23:54,519 DEBUG decorators.py Функция process_response_ans вызвана из функции 'main' в 2019-09-30 20:23:54.519538
+2019-09-30 20:23:54,519 DEBUG client.py Разбор приветственного сообщения от сервера: {'response': 200}
+2019-09-30 20:23:54,519 INFO client.py Установлено соединение с сервером. Ответ сервера: 200 : OK
+2019-09-30 20:23:54,519 DEBUG decorators.py Была вызвана функция process_response_ans c параметрами ({'response': 200},) , {}. Вызов из модуля __main__
+2019-09-30 20:23:54,520 DEBUG decorators.py Функция process_response_ans вызвана из функции 'main' в 2019-09-30 20:23:54.520535
+2019-09-30 20:23:54,520 DEBUG client.py Разбор приветственного сообщения от сервера: {'response': 200}
+2019-09-30 20:23:54,520 INFO client.py Установлено соединение с сервером. Ответ сервера: 200 : OK
+2019-09-30 20:23:54,520 DEBUG decorators.py Была вызвана функция process_response_ans c параметрами ({'response': 200},) , {}. Вызов из модуля __main__
+STREAM, proto=0, laddr=('127.0.0.1', 61441), raddr=('127.0.0.1', 7777)>,) , {}. Вызов из модуля basic_things.common_utils
+2019-09-30 20:23:54,520 DEBUG decorators.py Функция process_response_ans вызвана из функции 'main' в 2019-09-30 20:23:54.520833
+2019-09-30 20:23:54,520 DEBUG client.py Разбор приветственного сообщения от сервера: {'response': 200}
+2019-09-30 20:23:54,520 INFO client.py Установлено соединение с сервером. Ответ сервера: 200 : OK
+2019-09-30 20:23:54,520 DEBUG decorators.py Была вызвана функция user_interactive c параметрами (<socket.socket fd=528, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 61441), raddr=('127.0.0.1', 7777)>, 'test3') , {}. Вызов из модуля __main__
+2019-09-30 20:23:54,520 DEBUG client.py Запущены процессы
+2019-09-30 20:23:54,520 DEBUG decorators.py Была вызвана функция get_message c параметрами (<socket.socket fd=576, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 61442), raddr=('127.0.0.1', 7777)>,) , {}. Вызов из модуля basic_things.common_utils
+2019-09-30 20:23:54,520 DEBUG decorators.py Функция user_interactive вызвана из функции 'main' в 2019-09-30 20:23:54.520833
+2019-09-30 20:23:54,521 DEBUG client.py Запущены процессы
+2019-09-30 20:23:54,521 DEBUG decorators.py Была вызвана функция user_interactive c параметрами (<socket.socket fd=576, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 61442), raddr=('127.0.0.1', 7777)>, 'test2') , {}. Вызов из модуля __main__
+2019-09-30 20:23:54,521 DEBUG decorators.py Функция user_interactive вызвана из функции 'main' в 2019-09-30 20:23:54.521832
+2019-09-30 20:23:54,521 DEBUG decorators.py Была вызвана функция get_message c параметрами (<socket.socket fd=516, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 61443), raddr=('127.0.0.1', 7777)>,) , {}. Вызов из модуля basic_things.common_utils
+2019-09-30 20:23:54,521 DEBUG decorators.py Была вызвана функция user_interactive c параметрами (<socket.socket fd=516, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 61443), raddr=('127.0.0.1', 7777)>, 'test1') , {}. Вызов из модуля __main__
+2019-09-30 20:23:54,522 DEBUG decorators.py Функция user_interactive вызвана из функции 'main' в 2019-09-30 20:23:54.522829
+2019-09-30 20:23:54,522 DEBUG client.py Запущены процессы
+2019-09-30 20:24:31,422 DEBUG decorators.py Была вызвана функция create_message c параметрами (<socket.socket fd=528, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 61441), raddr=('127.0.0.1', 7777)>, 'test3') , {}. Вызов из модуля __main__
+2019-09-30 20:24:31,422 DEBUG decorators.py Функция create_message вызвана из функции 'main' в 2019-09-30 20:24:31.422818
+2019-09-30 20:24:43,240 DEBUG client.py Сформирован словарь сообщения: {'action': 'message', 'from': 'test3', 'to': 'Guest', 'time': 1569864283.2400606, 'message_text': 'hello'}
+2019-09-30 20:24:43,240 DEBUG decorators.py Была вызвана функция send_message c параметрами (<socket.socket fd=528, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 61441), raddr=('127.0.0.1', 7777)>, {'action': 'message', 'from': 'test3', 'to': 'Guest', 'time': 1569864283.2400606, 'message_text': 'hello'}) , {}. Вызов из модуля basic_things.common_utils
+2019-09-30 20:24:43,240 INFO client.py Отправлено сообщение для пользователя Guest
+2019-09-30 20:24:52,799 DEBUG decorators.py Была вызвана функция create_message c параметрами (<socket.socket fd=576, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 61442), raddr=('127.0.0.1', 7777)>, 'test2') , {}. Вызов из модуля __main__
+2019-09-30 20:24:52,799 DEBUG decorators.py Функция create_message вызвана из функции 'main' в 2019-09-30 20:24:52.799013
+2019-09-30 20:25:01,747 DEBUG client.py Сформирован словарь сообщения: {'action': 'message', 'from': 'test2', 'to': 'Guest1', 'time': 1569864301.7478435, 'message_text': 'Hello'}
+2019-09-30 20:25:01,760 DEBUG decorators.py Была вызвана функция send_message c параметрами (<socket.socket fd=576, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 61442), raddr=('127.0.0.1', 7777)>, {'action': 'message', 'from': 'test2', 'to': 'Guest1', 'time': 1569864301.7478435, 'message_text': 'Hello'}) , {}. Вызов из модуля basic_things.common_utils
+2019-09-30 20:25:01,760 INFO client.py Отправлено сообщение для пользователя Guest1
+2019-09-30 20:27:12,912 DEBUG decorators.py Была вызвана функция create_exit_message c параметрами ('test3',) , {}. Вызов из модуля __main__
+2019-09-30 20:27:12,923 DEBUG decorators.py Функция create_exit_message вызвана из функции 'main' в 2019-09-30 20:27:12.923540
+2019-09-30 20:27:12,923 DEBUG decorators.py Была вызвана функция send_message c параметрами (<socket.socket fd=528, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 61441), raddr=('127.0.0.1', 7777)>, {'action': 'exit', 'time': 1569864432.923541, 'account_name': 'test3'}) , {}. Вызов из модуля basic_things.common_utils
+2019-09-30 20:27:12,924 INFO client.py Завершение работы по команде пользователя.
+2019-09-30 20:27:51,616 DEBUG decorators.py Была вызвана функция create_exit_message c параметрами ('test1',) , {}. Вызов из модуля __main__
+2019-09-30 20:27:51,628 DEBUG decorators.py Функция create_exit_message вызвана из функции 'main' в 2019-09-30 20:27:51.628570
+2019-09-30 20:27:51,628 DEBUG decorators.py Была вызвана функция send_message c параметрами (<socket.socket fd=516, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 61443), raddr=('127.0.0.1', 7777)>, {'action': 'exit', 'time': 1569864471.62857, 'account_name': 'test1'}) , {}. Вызов из модуля basic_things.common_utils
+2019-09-30 20:27:51,629 INFO client.py Завершение работы по команде пользователя.
+2019-09-30 20:28:02,737 DEBUG decorators.py Была вызвана функция create_exit_message c параметрами ('test2',) , {}. Вызов из модуля __main__
+2019-09-30 20:28:02,737 DEBUG decorators.py Функция create_exit_message вызвана из функции 'main' в 2019-09-30 20:28:02.737073
+2019-09-30 20:28:02,737 DEBUG decorators.py Была вызвана функция send_message c параметрами (<socket.socket fd=576, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 61442), raddr=('127.0.0.1', 7777)>, {'action': 'exit', 'time': 1569864482.7370734, 'account_name': 'test2'}) , {}. Вызов из модуля basic_things.common_utils
+2019-09-30 20:28:02,738 INFO client.py Завершение работы по команде пользователя.
+2019-09-30 20:29:40,017 DEBUG decorators.py Была вызвана функция log_saver c параметрами () , {}. Вызов из модуля decorators
+2019-09-30 20:29:40,017 DEBUG decorators.py Была вызвана функция arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-09-30 20:29:40,017 DEBUG decorators.py Функция arg_parser вызвана из функции 'main' в 2019-09-30 20:29:40.017206
+2019-09-30 20:29:49,448 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: Guest
+2019-09-30 20:29:49,450 DEBUG decorators.py Была вызвана функция create_presence c параметрами ('Guest',) , {}. Вызов из модуля __main__
+2019-09-30 20:29:49,451 DEBUG decorators.py Функция create_presence вызвана из функции 'main' в 2019-09-30 20:29:49.451794
+2019-09-30 20:29:49,451 DEBUG client.py Сформировано presence сообщение для пользователя Guest
+2019-09-30 20:29:49,451 DEBUG decorators.py Была вызвана функция send_message c параметрами (<socket.socket fd=568, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 61449), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1569864589.4517946, 'user': {'account_name': 'Guest'}}) , {}. Вызов из модуля basic_things.common_utils
+2019-09-30 20:29:49,451 DEBUG decorators.py Была вызвана функция get_message c параметрами (<socket.socket fd=568, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 61449), raddr=('127.0.0.1', 7777)>,) , {}. Вызов из модуля basic_things.common_utils
+2019-09-30 20:29:49,954 DEBUG decorators.py Была вызвана функция process_response_ans c параметрами ({'response': 200},) , {}. Вызов из модуля __main__
+2019-09-30 20:29:49,954 DEBUG decorators.py Функция process_response_ans вызвана из функции 'main' в 2019-09-30 20:29:49.954538
+2019-09-30 20:29:49,954 DEBUG client.py Разбор приветственного сообщения от сервера: {'response': 200}
+2019-09-30 20:29:49,954 INFO client.py Установлено соединение с сервером. Ответ сервера: 200 : OK
+2019-09-30 20:29:49,959 DEBUG decorators.py Была вызвана функция get_message c параметрами (<socket.socket fd=568, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 61449), raddr=('127.0.0.1', 7777)>,) , {}. Вызов из модуля basic_things.common_utils
+2019-09-30 20:29:49,960 DEBUG client.py Запущены процессы
+2019-09-30 20:29:49,960 DEBUG decorators.py Была вызвана функция user_interactive c параметрами (<socket.socket fd=568, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 61449), raddr=('127.0.0.1', 7777)>, 'Guest') , {}. Вызов из модуля __main__
+2019-09-30 20:29:49,961 DEBUG decorators.py Функция user_interactive вызвана из функции 'main' в 2019-09-30 20:29:49.961336
+2019-09-30 20:29:56,048 DEBUG decorators.py Была вызвана функция create_message c параметрами (<socket.socket fd=568, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 61449), raddr=('127.0.0.1', 7777)>, 'Guest') , {}. Вызов из модуля __main__
+2019-09-30 20:29:56,048 DEBUG decorators.py Функция create_message вызвана из функции 'main' в 2019-09-30 20:29:56.048948
+2019-09-30 20:30:03,868 DEBUG client.py Сформирован словарь сообщения: {'action': 'message', 'from': 'Guest', 'to': 'Guest', 'time': 1569864603.8688242, 'message_text': 'Hello'}
+2019-09-30 20:30:03,868 DEBUG decorators.py Была вызвана функция send_message c параметрами (<socket.socket fd=568, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 61449), raddr=('127.0.0.1', 7777)>, {'action': 'message', 'from': 'Guest', 'to': 'Guest', 'time': 1569864603.8688242, 'message_text': 'Hello'}) , {}. Вызов из модуля basic_things.common_utils
+2019-09-30 20:30:03,868 INFO client.py Отправлено сообщение для пользователя Guest
+2019-09-30 20:30:04,222 INFO client.py Получено сообщение от пользователя Guest:
+Hello
+2019-09-30 20:30:04,222 DEBUG decorators.py Была вызвана функция get_message c параметрами (<socket.socket fd=568, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 61449), raddr=('127.0.0.1', 7777)>,) , {}. Вызов из модуля basic_things.common_utils
+2019-09-30 20:30:08,233 CRITICAL client.py Потеряно соединение с сервером.
+2019-10-10 22:41:09,137 DEBUG decorators.py Была вызвана функция arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-10-10 22:41:09,138 DEBUG decorators.py Функция arg_parser вызвана из функции 'main' в 2019-10-10 22:41:09.138151
+2019-10-10 22:41:09,138 DEBUG decorators.py Была вызвана функция arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-10-10 22:41:09,138 DEBUG decorators.py Функция arg_parser вызвана из функции 'main' в 2019-10-10 22:41:09.138151
+2019-10-10 22:41:09,140 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test1
+2019-10-10 22:41:09,140 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test2
+2019-10-10 22:41:10,165 DEBUG decorators.py Была вызвана функция create_presence c параметрами ('test1',) , {}. Вызов из модуля __main__
+2019-10-10 22:41:10,166 DEBUG decorators.py Была вызвана функция create_presence c параметрами ('test2',) , {}. Вызов из модуля __main__
+2019-10-10 22:41:10,166 DEBUG decorators.py Функция create_presence вызвана из функции 'main' в 2019-10-10 22:41:10.166437
+2019-10-10 22:41:10,166 DEBUG decorators.py Функция create_presence вызвана из функции 'main' в 2019-10-10 22:41:10.166437
+2019-10-10 22:41:10,166 DEBUG decorators.py Была вызвана функция send_message c параметрами (<socket.socket fd=456, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 62041), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1570736470.1664371, 'user': {'account_name': 'test1'}}) , {}. Вызов из модуля basic_things.common_utils
+2019-10-10 22:41:10,166 DEBUG client.py Сформировано presence сообщение для пользователя test2
+2019-10-10 22:41:10,166 DEBUG decorators.py Была вызвана функция send_message c параметрами (<socket.socket fd=440, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 62042), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1570736470.1664371, 'user': {'account_name': 'test2'}}) , {}. Вызов из модуля basic_things.common_utils
+2019-10-10 22:41:10,166 DEBUG decorators.py Была вызвана функция get_message c параметрами (<socket.socket fd=456, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 62041), raddr=('127.0.0.1', 7777)>,) , {}. Вызов из модуля basic_things.common_utils
+2019-10-10 22:41:10,167 DEBUG decorators.py Была вызвана функция get_message c параметрами (<socket.socket fd=440, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 62042), raddr=('127.0.0.1', 7777)>,) , {}. Вызов из модуля basic_things.common_utils
+2019-10-10 22:41:10,225 DEBUG decorators.py Была вызвана функция process_response_answer c параметрами ({'response': 200},) , {}. Вызов из модуля __main__
+2019-10-10 22:41:10,225 DEBUG decorators.py Функция process_response_answer вызвана из функции 'main' в 2019-10-10 22:41:10.225979
+2019-10-10 22:41:10,225 DEBUG client.py Разбор приветственного сообщения от сервера: {'response': 200}
+2019-10-10 22:41:10,225 INFO client.py Установлено соединение с сервером. Ответ сервера: 200 : OK
+2019-10-10 22:41:10,228 DEBUG decorators.py Была вызвана функция get_message c параметрами (<socket.socket fd=456, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 62041), raddr=('127.0.0.1', 7777)>,) , {}. Вызов из модуля basic_things.common_utils
+2019-10-10 22:41:10,229 DEBUG client.py Запущены процессы
+2019-10-10 22:41:10,297 DEBUG decorators.py Была вызвана функция process_response_answer c параметрами ({'response': 200},) , {}. Вызов из модуля __main__
+2019-10-10 22:41:10,297 DEBUG decorators.py Функция process_response_answer вызвана из функции 'main' в 2019-10-10 22:41:10.297239
+2019-10-10 22:41:10,297 DEBUG client.py Разбор приветственного сообщения от сервера: {'response': 200}
+2019-10-10 22:41:10,297 INFO client.py Установлено соединение с сервером. Ответ сервера: 200 : OK
+2019-10-10 22:41:10,299 DEBUG decorators.py Была вызвана функция get_message c параметрами (<socket.socket fd=440, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 62042), raddr=('127.0.0.1', 7777)>,) , {}. Вызов из модуля basic_things.common_utils
+2019-10-10 22:41:10,300 DEBUG client.py Запущены процессы
+2019-10-10 22:42:07,366 DEBUG client.py Сформирован словарь сообщения: {'action': 'message', 'from': 'test2', 'to': 'test1', 'time': 1570736527.3664138, 'message_text': 'Dude, UR awesome!'}
+2019-10-10 22:42:07,366 DEBUG decorators.py Была вызвана функция send_message c параметрами (<socket.socket fd=440, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 62042), raddr=('127.0.0.1', 7777)>, {'action': 'message', 'from': 'test2', 'to': 'test1', 'time': 1570736527.3664138, 'message_text': 'Dude, UR awesome!'}) , {}. Вызов из модуля basic_things.common_utils
+2019-10-10 22:42:07,367 INFO client.py Отправлено сообщение для пользователя test1
+2019-10-10 22:42:07,855 INFO client.py Получено сообщение от пользователя test2:
+Dude, UR awesome!
+2019-10-10 22:42:07,855 DEBUG decorators.py Была вызвана функция get_message c параметрами (<socket.socket fd=456, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 62041), raddr=('127.0.0.1', 7777)>,) , {}. Вызов из модуля basic_things.common_utils
+2019-10-10 22:42:38,686 DEBUG client.py Сформирован словарь сообщения: {'action': 'message', 'from': 'test1', 'to': 'test1', 'time': 1570736558.6867464, 'message_text': 'U 2, bro!'}
+2019-10-10 22:42:38,686 DEBUG decorators.py Была вызвана функция send_message c параметрами (<socket.socket fd=456, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 62041), raddr=('127.0.0.1', 7777)>, {'action': 'message', 'from': 'test1', 'to': 'test1', 'time': 1570736558.6867464, 'message_text': 'U 2, bro!'}) , {}. Вызов из модуля basic_things.common_utils
+2019-10-10 22:42:38,686 INFO client.py Отправлено сообщение для пользователя test1
+2019-10-10 22:42:38,951 INFO client.py Получено сообщение от пользователя test1:
+U 2, bro!
+2019-10-10 22:42:38,952 DEBUG decorators.py Была вызвана функция get_message c параметрами (<socket.socket fd=456, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 62041), raddr=('127.0.0.1', 7777)>,) , {}. Вызов из модуля basic_things.common_utils
+2019-10-10 22:43:16,995 DEBUG client.py Сформирован словарь сообщения: {'action': 'message', 'from': 'test1', 'to': 'test2', 'time': 1570736596.9958143, 'message_text': 'U 2, bro!'}
+2019-10-10 22:43:16,995 DEBUG decorators.py Была вызвана функция send_message c параметрами (<socket.socket fd=456, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 62041), raddr=('127.0.0.1', 7777)>, {'action': 'message', 'from': 'test1', 'to': 'test2', 'time': 1570736596.9958143, 'message_text': 'U 2, bro!'}) , {}. Вызов из модуля basic_things.common_utils
+2019-10-10 22:43:16,995 INFO client.py Отправлено сообщение для пользователя test2
+2019-10-10 22:43:17,199 INFO client.py Получено сообщение от пользователя test1:
+U 2, bro!
+2019-10-10 22:43:17,199 DEBUG decorators.py Была вызвана функция get_message c параметрами (<socket.socket fd=440, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 62042), raddr=('127.0.0.1', 7777)>,) , {}. Вызов из модуля basic_things.common_utils
+2019-10-10 22:43:22,546 DEBUG decorators.py Была вызвана функция create_exit_message c параметрами (<ClientSender(Thread-2, started daemon 7360)>,) , {}. Вызов из модуля __main__
+2019-10-10 22:43:22,546 DEBUG decorators.py Функция create_exit_message вызвана из функции 'main' в 2019-10-10 22:43:22.546414
+2019-10-10 22:43:22,546 DEBUG decorators.py Была вызвана функция send_message c параметрами (<socket.socket fd=456, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 62041), raddr=('127.0.0.1', 7777)>, {'action': 'exit', 'time': 1570736602.5464141, 'account_name': 'test1'}) , {}. Вызов из модуля basic_things.common_utils
+2019-10-10 22:43:22,547 INFO client.py Завершение работы по команде пользователя.
+2019-10-10 22:43:26,079 DEBUG decorators.py Была вызвана функция create_exit_message c параметрами (<ClientSender(Thread-2, started daemon 12220)>,) , {}. Вызов из модуля __main__
+2019-10-10 22:43:26,079 DEBUG decorators.py Функция create_exit_message вызвана из функции 'main' в 2019-10-10 22:43:26.079987
+2019-10-10 22:43:26,079 DEBUG decorators.py Была вызвана функция send_message c параметрами (<socket.socket fd=440, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 62042), raddr=('127.0.0.1', 7777)>, {'action': 'exit', 'time': 1570736606.0799878, 'account_name': 'test2'}) , {}. Вызов из модуля basic_things.common_utils
+2019-10-10 22:43:26,080 INFO client.py Завершение работы по команде пользователя.
+2019-10-13 19:28:29,737 DEBUG decorators.py Была вызвана функция arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-10-13 19:28:29,737 DEBUG decorators.py Была вызвана функция arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-10-13 19:28:29,737 DEBUG decorators.py Функция arg_parser вызвана из функции 'main' в 2019-10-13 19:28:29.737053
+2019-10-13 19:28:29,737 DEBUG decorators.py Функция arg_parser вызвана из функции 'main' в 2019-10-13 19:28:29.737053
+2019-10-13 19:28:29,737 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test2
+2019-10-13 19:28:31,754 CRITICAL client.py Не удалось подключиться к серверу 127.0.0.1:7777, конечный компьютер отверг запрос на подключение.
+2019-10-13 19:32:21,388 DEBUG decorators.py Была вызвана функция arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-10-13 19:32:21,388 DEBUG decorators.py Функция arg_parser вызвана из функции 'main' в 2019-10-13 19:32:21.388850
+2019-10-13 19:32:21,390 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test1
+2019-10-13 19:32:21,394 DEBUG decorators.py Была вызвана функция arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-10-13 19:32:21,394 DEBUG decorators.py Функция arg_parser вызвана из функции 'main' в 2019-10-13 19:32:21.394608
+2019-10-13 19:32:21,394 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test2
+2019-10-13 19:32:22,922 DEBUG decorators.py Была вызвана функция create_presence c параметрами ('test1',) , {}. Вызов из модуля __main__
+2019-10-13 19:32:22,922 DEBUG decorators.py Функция create_presence вызвана из функции 'main' в 2019-10-13 19:32:22.922739
+2019-10-13 19:32:22,922 DEBUG client.py Сформировано presence сообщение для пользователя test1
+2019-10-13 19:32:22,922 DEBUG decorators.py Была вызвана функция send_message c параметрами (<socket.socket fd=500, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 63278), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1570984342.9227393, 'user': {'account_name': 'test1'}}) , {}. Вызов из модуля basic_things.common_utils
+2019-10-13 19:32:22,923 DEBUG decorators.py Была вызвана функция get_message c параметрами (<socket.socket fd=500, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 63278), raddr=('127.0.0.1', 7777)>,) , {}. Вызов из модуля basic_things.common_utils
+2019-10-13 19:32:22,936 DEBUG decorators.py Была вызвана функция create_presence c параметрами ('test2',) , {}. Вызов из модуля __main__
+2019-10-13 19:32:22,936 DEBUG decorators.py Функция create_presence вызвана из функции 'main' в 2019-10-13 19:32:22.936394
+2019-10-13 19:32:22,936 DEBUG client.py Сформировано presence сообщение для пользователя test2
+2019-10-13 19:32:22,936 DEBUG decorators.py Была вызвана функция send_message c параметрами (<socket.socket fd=520, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 63279), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1570984342.9363945, 'user': {'account_name': 'test2'}}) , {}. Вызов из модуля basic_things.common_utils
+2019-10-13 19:32:22,937 DEBUG decorators.py Была вызвана функция get_message c параметрами (<socket.socket fd=520, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 63279), raddr=('127.0.0.1', 7777)>,) , {}. Вызов из модуля basic_things.common_utils
+2019-10-13 19:32:22,973 DEBUG decorators.py Была вызвана функция process_response_answer c параметрами ({'response': 200},) , {}. Вызов из модуля __main__
+2019-10-13 19:32:22,973 DEBUG decorators.py Функция process_response_answer вызвана из функции 'main' в 2019-10-13 19:32:22.973853
+2019-10-13 19:32:22,973 DEBUG client.py Разбор приветственного сообщения от сервера: {'response': 200}
+2019-10-13 19:32:22,973 INFO client.py Установлено соединение с сервером. Ответ сервера: 200 : OK
+2019-10-13 19:32:22,975 DEBUG decorators.py Была вызвана функция get_message c параметрами (<socket.socket fd=500, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 63278), raddr=('127.0.0.1', 7777)>,) , {}. Вызов из модуля basic_things.common_utils
+2019-10-13 19:32:22,976 DEBUG client.py Запущены процессы
+2019-10-13 19:32:23,511 DEBUG decorators.py Была вызвана функция process_response_answer c параметрами ({'response': 200},) , {}. Вызов из модуля __main__
+2019-10-13 19:32:23,511 DEBUG decorators.py Функция process_response_answer вызвана из функции 'main' в 2019-10-13 19:32:23.511191
+2019-10-13 19:32:23,511 DEBUG client.py Разбор приветственного сообщения от сервера: {'response': 200}
+2019-10-13 19:32:23,511 INFO client.py Установлено соединение с сервером. Ответ сервера: 200 : OK
+2019-10-13 19:32:23,513 DEBUG decorators.py Была вызвана функция get_message c параметрами (<socket.socket fd=520, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 63279), raddr=('127.0.0.1', 7777)>,) , {}. Вызов из модуля basic_things.common_utils
+2019-10-13 19:32:23,513 DEBUG client.py Запущены процессы
+2019-10-13 19:32:40,134 DEBUG client.py Сформирован словарь сообщения: {'action': 'message', 'from': 'test1', 'to': 'test2', 'time': 1570984360.1348567, 'message_text': 'JJG'}
+2019-10-13 19:32:40,145 DEBUG decorators.py Была вызвана функция send_message c параметрами (<socket.socket fd=500, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 63278), raddr=('127.0.0.1', 7777)>, {'action': 'message', 'from': 'test1', 'to': 'test2', 'time': 1570984360.1348567, 'message_text': 'JJG'}) , {}. Вызов из модуля basic_things.common_utils
+2019-10-13 19:32:40,145 INFO client.py Отправлено сообщение для пользователя test2
+2019-10-13 19:32:40,291 INFO client.py Получено сообщение от пользователя test1:
+JJG
+2019-10-13 19:32:40,291 DEBUG decorators.py Была вызвана функция get_message c параметрами (<socket.socket fd=520, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 63279), raddr=('127.0.0.1', 7777)>,) , {}. Вызов из модуля basic_things.common_utils
+2019-10-13 19:32:44,723 DEBUG decorators.py Была вызвана функция create_exit_message c параметрами (<ClientSender(Thread-2, started daemon 5076)>,) , {}. Вызов из модуля __main__
+2019-10-13 19:32:44,723 DEBUG decorators.py Функция create_exit_message вызвана из функции 'main' в 2019-10-13 19:32:44.723454
+2019-10-13 19:32:44,723 DEBUG decorators.py Была вызвана функция send_message c параметрами (<socket.socket fd=500, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 63278), raddr=('127.0.0.1', 7777)>, {'action': 'exit', 'time': 1570984364.7234545, 'account_name': 'test1'}) , {}. Вызов из модуля basic_things.common_utils
+2019-10-13 19:32:44,724 INFO client.py Завершение работы по команде пользователя.
+2019-10-13 19:32:44,904 CRITICAL client.py Потеряно соединение с сервером.
+2019-10-13 19:32:47,638 DEBUG decorators.py Была вызвана функция create_exit_message c параметрами (<ClientSender(Thread-2, started daemon 4008)>,) , {}. Вызов из модуля __main__
+2019-10-13 19:32:47,638 DEBUG decorators.py Функция create_exit_message вызвана из функции 'main' в 2019-10-13 19:32:47.638001
+2019-10-13 19:32:47,638 DEBUG decorators.py Была вызвана функция send_message c параметрами (<socket.socket fd=520, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 63279), raddr=('127.0.0.1', 7777)>, {'action': 'exit', 'time': 1570984367.638001, 'account_name': 'test2'}) , {}. Вызов из модуля basic_things.common_utils
+2019-10-13 19:32:47,639 INFO client.py Завершение работы по команде пользователя.
+2019-10-13 19:32:47,965 CRITICAL client.py Потеряно соединение с сервером.
+2019-10-13 19:39:46,176 DEBUG decorators.py Была вызвана функция arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-10-13 19:39:46,176 DEBUG decorators.py Функция arg_parser вызвана из функции 'main' в 2019-10-13 19:39:46.176703
+2019-10-13 19:39:46,180 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test1
+2019-10-13 19:39:46,181 DEBUG decorators.py Была вызвана функция arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-10-13 19:39:46,183 DEBUG decorators.py Функция arg_parser вызвана из функции 'main' в 2019-10-13 19:39:46.183009
+2019-10-13 19:39:46,184 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test2
+2019-10-13 19:39:47,696 DEBUG decorators.py Была вызвана функция create_presence c параметрами ('test1',) , {}. Вызов из модуля __main__
+2019-10-13 19:39:47,696 DEBUG decorators.py Функция create_presence вызвана из функции 'main' в 2019-10-13 19:39:47.696886
+2019-10-13 19:39:47,696 DEBUG client.py Сформировано presence сообщение для пользователя test1
+2019-10-13 19:39:47,696 DEBUG decorators.py Была вызвана функция send_message c параметрами (<socket.socket fd=464, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 63390), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1570984787.6968865, 'user': {'account_name': 'test1'}}) , {}. Вызов из модуля basic_things.common_utils
+2019-10-13 19:39:47,697 DEBUG decorators.py Была вызвана функция get_message c параметрами (<socket.socket fd=464, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 63390), raddr=('127.0.0.1', 7777)>,) , {}. Вызов из модуля basic_things.common_utils
+2019-10-13 19:39:47,705 DEBUG decorators.py Была вызвана функция create_presence c параметрами ('test2',) , {}. Вызов из модуля __main__
+2019-10-13 19:39:47,705 DEBUG decorators.py Функция create_presence вызвана из функции 'main' в 2019-10-13 19:39:47.705904
+2019-10-13 19:39:47,705 DEBUG client.py Сформировано presence сообщение для пользователя test2
+2019-10-13 19:39:47,705 DEBUG decorators.py Была вызвана функция send_message c параметрами (<socket.socket fd=500, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 63391), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1570984787.7059047, 'user': {'account_name': 'test2'}}) , {}. Вызов из модуля basic_things.common_utils
+2019-10-13 19:39:47,705 DEBUG decorators.py Была вызвана функция get_message c параметрами (<socket.socket fd=500, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 63391), raddr=('127.0.0.1', 7777)>,) , {}. Вызов из модуля basic_things.common_utils
+2019-10-13 19:39:47,732 DEBUG decorators.py Была вызвана функция process_response_answer c параметрами ({'response': 200},) , {}. Вызов из модуля __main__
+2019-10-13 19:39:47,732 DEBUG decorators.py Функция process_response_answer вызвана из функции 'main' в 2019-10-13 19:39:47.732332
+2019-10-13 19:39:47,732 DEBUG client.py Разбор приветственного сообщения от сервера: {'response': 200}
+2019-10-13 19:39:47,732 INFO client.py Установлено соединение с сервером. Ответ сервера: 200 : OK
+2019-10-13 19:39:47,751 DEBUG decorators.py Была вызвана функция get_message c параметрами (<socket.socket fd=464, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 63390), raddr=('127.0.0.1', 7777)>,) , {}. Вызов из модуля basic_things.common_utils
+2019-10-13 19:39:47,751 DEBUG client.py Запущены процессы
+2019-10-13 19:39:47,756 DEBUG decorators.py Была вызвана функция process_response_answer c параметрами ({'response': 200},) , {}. Вызов из модуля __main__
+2019-10-13 19:39:47,756 DEBUG decorators.py Функция process_response_answer вызвана из функции 'main' в 2019-10-13 19:39:47.756767
+2019-10-13 19:39:47,756 DEBUG client.py Разбор приветственного сообщения от сервера: {'response': 200}
+2019-10-13 19:39:47,757 INFO client.py Установлено соединение с сервером. Ответ сервера: 200 : OK
+2019-10-13 19:39:47,774 DEBUG decorators.py Была вызвана функция get_message c параметрами (<socket.socket fd=500, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 63391), raddr=('127.0.0.1', 7777)>,) , {}. Вызов из модуля basic_things.common_utils
+2019-10-13 19:39:47,779 DEBUG client.py Запущены процессы
+2019-10-13 19:43:52,869 DEBUG decorators.py Была вызвана функция arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-10-13 19:43:52,869 DEBUG decorators.py Функция arg_parser вызвана из функции 'main' в 2019-10-13 19:43:52.869564
+2019-10-13 19:43:52,871 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test2
+2019-10-13 19:43:52,880 DEBUG decorators.py Была вызвана функция arg_parser c параметрами () , {}. Вызов из модуля __main__
+2019-10-13 19:43:52,880 DEBUG decorators.py Функция arg_parser вызвана из функции 'main' в 2019-10-13 19:43:52.880457
+2019-10-13 19:43:52,883 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test1
+2019-10-13 19:43:54,389 DEBUG decorators.py Была вызвана функция create_presence c параметрами ('test2',) , {}. Вызов из модуля __main__
+2019-10-13 19:43:54,389 DEBUG decorators.py Функция create_presence вызвана из функции 'main' в 2019-10-13 19:43:54.389177
+2019-10-13 19:43:54,389 DEBUG client.py Сформировано presence сообщение для пользователя test2
+2019-10-13 19:43:54,389 DEBUG decorators.py Была вызвана функция send_message c параметрами (<socket.socket fd=636, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 63429), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1570985034.389177, 'user': {'account_name': 'test2'}}) , {}. Вызов из модуля basic_things.common_utils
+2019-10-13 19:43:54,390 DEBUG decorators.py Была вызвана функция get_message c параметрами (<socket.socket fd=636, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 63429), raddr=('127.0.0.1', 7777)>,) , {}. Вызов из модуля basic_things.common_utils
+2019-10-13 19:43:54,399 DEBUG decorators.py Была вызвана функция create_presence c параметрами ('test1',) , {}. Вызов из модуля __main__
+2019-10-13 19:43:54,399 DEBUG decorators.py Функция create_presence вызвана из функции 'main' в 2019-10-13 19:43:54.399486
+2019-10-13 19:43:54,400 DEBUG client.py Сформировано presence сообщение для пользователя test1
+2019-10-13 19:43:54,400 DEBUG decorators.py Была вызвана функция send_message c параметрами (<socket.socket fd=500, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 63430), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1570985034.400485, 'user': {'account_name': 'test1'}}) , {}. Вызов из модуля basic_things.common_utils
+2019-10-13 19:43:54,401 DEBUG decorators.py Была вызвана функция get_message c параметрами (<socket.socket fd=500, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 63430), raddr=('127.0.0.1', 7777)>,) , {}. Вызов из модуля basic_things.common_utils
+2019-10-13 19:43:54,439 DEBUG decorators.py Была вызвана функция process_response_answer c параметрами ({'response': 200},) , {}. Вызов из модуля __main__
+2019-10-13 19:43:54,439 DEBUG decorators.py Функция process_response_answer вызвана из функции 'main' в 2019-10-13 19:43:54.439985
+2019-10-13 19:43:54,439 DEBUG client.py Разбор приветственного сообщения от сервера: {'response': 200}
+2019-10-13 19:43:54,439 INFO client.py Установлено соединение с сервером. Ответ сервера: 200 : OK
+2019-10-13 19:43:54,446 DEBUG decorators.py Была вызвана функция get_message c параметрами (<socket.socket fd=636, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 63429), raddr=('127.0.0.1', 7777)>,) , {}. Вызов из модуля basic_things.common_utils
+2019-10-13 19:43:54,447 DEBUG client.py Запущены процессы
+2019-10-13 19:43:54,970 DEBUG decorators.py Была вызвана функция process_response_answer c параметрами ({'response': 200},) , {}. Вызов из модуля __main__
+2019-10-13 19:43:54,970 DEBUG decorators.py Функция process_response_answer вызвана из функции 'main' в 2019-10-13 19:43:54.970428
+2019-10-13 19:43:54,970 DEBUG client.py Разбор приветственного сообщения от сервера: {'response': 200}
+2019-10-13 19:43:54,970 INFO client.py Установлено соединение с сервером. Ответ сервера: 200 : OK
+2019-10-13 19:43:54,972 DEBUG decorators.py Была вызвана функция get_message c параметрами (<socket.socket fd=500, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 63430), raddr=('127.0.0.1', 7777)>,) , {}. Вызов из модуля basic_things.common_utils
+2019-10-13 19:43:54,973 DEBUG client.py Запущены процессы
+2019-10-13 19:44:09,804 DEBUG client.py Сформирован словарь сообщения: {'action': 'message', 'from': 'test2', 'to': 'test1', 'time': 1570985049.8048131, 'message_text': 'sdfdsfsd'}
+2019-10-13 19:44:09,804 DEBUG decorators.py Была вызвана функция send_message c параметрами (<socket.socket fd=636, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 63429), raddr=('127.0.0.1', 7777)>, {'action': 'message', 'from': 'test2', 'to': 'test1', 'time': 1570985049.8048131, 'message_text': 'sdfdsfsd'}) , {}. Вызов из модуля basic_things.common_utils
+2019-10-13 19:44:09,804 INFO client.py Отправлено сообщение для пользователя test1
+2019-10-13 19:44:10,033 INFO client.py Получено сообщение от пользователя test2:
+sdfdsfsd
+2019-10-13 19:44:10,033 DEBUG decorators.py Была вызвана функция get_message c параметрами (<socket.socket fd=500, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 63430), raddr=('127.0.0.1', 7777)>,) , {}. Вызов из модуля basic_things.common_utils
+2019-10-13 19:44:12,964 DEBUG decorators.py Была вызвана функция create_exit_message c параметрами (<ClientSender(Thread-2, started daemon 12332)>,) , {}. Вызов из модуля __main__
+2019-10-13 19:44:12,964 DEBUG decorators.py Функция create_exit_message вызвана из функции 'main' в 2019-10-13 19:44:12.964093
+2019-10-13 19:44:12,964 DEBUG decorators.py Была вызвана функция send_message c параметрами (<socket.socket fd=636, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 63429), raddr=('127.0.0.1', 7777)>, {'action': 'exit', 'time': 1570985052.9640937, 'account_name': 'test2'}) , {}. Вызов из модуля basic_things.common_utils
+2019-10-13 19:44:12,965 INFO client.py Завершение работы по команде пользователя.
+2019-10-13 19:44:13,070 CRITICAL client.py Потеряно соединение с сервером.
