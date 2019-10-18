@@ -7,7 +7,7 @@ MAX_PACKAGE_BYTE_LENGTH = 1024
 ENCODING = 'utf-8'
 LOGGING_LEVEL = logging.DEBUG
 # База данных для хранения данных сервера:
-SERVER_DB = 'sqlite:///server_db.db3'
+SERVER_CONFIG = 'server.ini'
 
 # Прококол JIM основные ключи:
 ACTION = 'action'
@@ -22,8 +22,13 @@ PRESENCE = 'presence'
 RESPONSE = 'response'
 ERROR = 'error'
 MESSAGE = 'message'
-MESSAGE_TEXT = 'message_text'
+MESSAGE_TEXT = 'mess_text'
 EXIT = 'exit'
+GET_CONTACTS = 'get_contacts'
+LIST_INFO = 'data_list'
+REMOVE_CONTACT = 'remove'
+ADD_CONTACT = 'add'
+USERS_REQUEST = 'get_users'
 
 RESPONSE_200 = {RESPONSE: 200}
 # 400
@@ -31,3 +36,6 @@ RESPONSE_400 = {
             RESPONSE: 400,
             ERROR: None
         }
+RESPONSE_202 = {RESPONSE: 202,
+                LIST_INFO: None
+                }
