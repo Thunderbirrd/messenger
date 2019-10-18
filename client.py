@@ -172,18 +172,41 @@ class ClientReader(threading.Thread, metaclass=ClientValidator):
     # Основной цикл приёмника сообщений, принимает сообщения, выводит в консоль. Завершается при потере соединения.
     def run(self):
         while True:
-            try:
-                message = get_message(self.sock)
-                if ACTION in message and message[ACTION] == MESSAGE and SENDER in message and DESTINATION in message \
-                        and MESSAGE_TEXT in message and message[DESTINATION] == self.account_name:
-                    print(f'\nПолучено сообщение от пользователя {message[SENDER]}:\n{message[MESSAGE_TEXT]}')
-                    client_logger.info(f'Получено сообщение от пользователя {message[SENDER]}:\n{message[MESSAGE_TEXT]}')
+            # Отдыхаем секунду и снова пробуем захватить сокет.
+            # если не сделать тут задержку, то второй поток может достаточно долго ждать освобождения сокета.
+            time.sleep(1)
+            with sock_lock:
+                try:
+                    message = get_message(self.sock)
+
+                # Принято некорректное сообщение
+                except IncorrectDataReceivedError:
+                    client_logger.error(f'Не удалось декодировать полученное сообщение.')
+                # Вышел таймаут соединения если errno = None, иначе обрыв соединения.
+                except OSError as err:
+                    if err.errno:
+                        client_logger.critical(f'Потеряно соединение с сервером.')
+                        break
+                # Проблемы с соединением
+                except (ConnectionError, ConnectionAbortedError, ConnectionResetError, json.JSONDecodeError):
+                    client_logger.critical(f'Потеряно соединение с сервером.')
+                    break
+                # Если пакет корретно получен выводим в консоль и записываем в базу.
                 else:
-                    client_logger.error(f'Получено некорректное сообщение с сервера: {message}')
-            except IncorrectDataReceivedError:
-                client_logger.error(f'Не удалось декодировать полученное сообщение.')
-            except (OSError, ConnectionError, ConnectionAbortedError, ConnectionResetError, json.JSONDecodeError):
-                client_logger.critical(f'Потеряно соединение с сервером.')
+                    if ACTION in message and message[ACTION] == MESSAGE and SENDER in message and DESTINATION in message \
+                            and MESSAGE_TEXT in message and message[DESTINATION] == self.account_name:
+                        print(f'\nПолучено сообщение от пользователя {message[SENDER]}:\n{message[MESSAGE_TEXT]}')
+                        # Захватываем работу с базой данных и сохраняем в неё сообщение
+                        with database_lock:
+                            try:
+                                self.database.save_message(message[SENDER], self.account_name, message[MESSAGE_TEXT])
+                            except:
+                                client_logger.error('Ошибка взаимодействия с базой данных')
+
+                        client_logger.info(f'Получено сообщение от пользователя {message[SENDER]}:\n'
+                                           f'{message[MESSAGE_TEXT]}')
+                    else:
+                        client_logger.error(f'Получено некорректное сообщение с сервера: {message}')
                 break
 
 
@@ -337,12 +360,15 @@ def main():
 
     client_logger.info(
         f'Запущен клиент с парамертами: адрес сервера: {server_address} , порт: {server_port},'
-        f' имя пользователя: {client_name}'
-    )
+        f' имя пользователя: {client_name}')
 
     # Инициализация сокета и сообщение серверу о нашем появлении
     try:
         transport = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+
+        # Таймаут 1 секунда, необходим для освобождения сокета.
+        transport.settimeout(1)
+
         transport.connect((server_address, server_port))
         send_message(transport, create_presence(client_name))
         answer = process_response_answer(get_message(transport))
@@ -359,21 +385,25 @@ def main():
         exit(1)
     except (ConnectionRefusedError, ConnectionError):
         client_logger.critical(
-            f'Не удалось подключиться к серверу {server_address}:{server_port}, конечный компьютер отверг'
-            f' запрос на подключение.'
-        )
+            f'Не удалось подключиться к серверу {server_address}:{server_port}, конечный компьютер'
+            f' отверг запрос на подключение.')
         exit(1)
     else:
-        # Если соединение с сервером установлено корректно, запускаем клиенский процесс приёма сообщний
-        module_receiver = ClientReader(client_name, transport)
-        module_receiver.daemon = True
-        module_receiver.start()
 
-        # затем запускаем отправку сообщений и взаимодействие с пользователем.
-        module_sender = ClientSender(client_name, transport)
+        # Инициализация БД
+        database = ClientDB(client_name)
+        database_load(transport, database, client_name)
+
+        # Если соединение с сервером установлено корректно, запускаем поток взаимодействия с пользователем
+        module_sender = ClientSender(client_name, transport, database)
         module_sender.daemon = True
         module_sender.start()
         client_logger.debug('Запущены процессы')
+
+        # затем запускаем поток - приёмник сообщений.
+        module_receiver = ClientReader(client_name, transport, database)
+        module_receiver.daemon = True
+        module_receiver.start()
 
         # Watchdog основной цикл, если один из потоков завершён, то значит или потеряно соединение или пользователь
         # ввёл exit. Поскольку все события обработываются в потоках, достаточно просто завершить цикл.
