@@ -17,10 +17,9 @@ from descriptors import Port
 from metaclasses import ServerMaker
 from server_db import ServerDB
 from PySide2.QtWidgets import QMessageBox, QApplication
-from PyQt5.QtCore import QDeadlineTimer
+from PyQt5.QtCore import QTimer
 from server_gui import MainWindow, gui_create_model, HistoryWindow, create_stat_model, ConfigWindow
 from PyQt5.QtGui import QStandardItemModel, QStandardItem
-
 
 server_logger = logging.getLogger('server')
 
@@ -65,13 +64,13 @@ class Server(threading.Thread, metaclass=ServerMaker):
         self.sock = transport
         self.sock.listen()
 
-    def main_loop(self):
+    def run(self):
         # Инициализация Сокета
         self.init_socket()
 
         # Основной цикл программы сервера
         while True:
-            # Ждём подключения, если таймаут вышел - исключение.
+            # Ждём подключения, если таймаут вышел, ловим исключение.
             try:
                 client, client_address = self.sock.accept()
             except OSError:
@@ -82,7 +81,7 @@ class Server(threading.Thread, metaclass=ServerMaker):
 
             recv_data_lst = []
             send_data_lst = []
-            errors_lst = []
+            err_lst = []
             # Проверяем на наличие ждущих клиентов
             try:
                 if self.clients:
@@ -271,10 +270,10 @@ def main():
         config_window.db_file.insert(config['SETTINGS']['Database_file'])
         config_window.port.insert(config['SETTINGS']['Default_port'])
         config_window.ip.insert(config['SETTINGS']['Listen_Address'])
-        config_window.save_btn.clicked.connect(server_config_save)
+        config_window.save_btn.clicked.connect(save_server_config)
 
     # Функция сохранения настроек
-    def server_config_save():
+    def save_server_config():
         global config_window
         message = QMessageBox()
         config['SETTINGS']['Database_path'] = config_window.db_path.text()
@@ -295,7 +294,7 @@ def main():
                 message.warning(config_window, 'Ошибка', 'Порт должен быть от 1024 до 65536')
 
     # Таймер, обновляющий список клиентов 1 раз в секунду
-    timer = QDeadlineTimer()
+    timer = QTimer()
     timer.timeout.connect(list_update)
     timer.start(1000)
 
@@ -308,5 +307,5 @@ def main():
     server_app.exec_()
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()

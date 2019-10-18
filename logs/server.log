@@ -13,3 +13,65 @@
 2019-10-18 13:29:38,053 DEBUG decorators.py Была вызвана функция arg_parser c параметрами ('7777', '') , {}. Вызов из модуля __main__
 2019-10-18 13:29:49,738 DEBUG decorators.py Была вызвана функция arg_parser c параметрами ('7777', '') , {}. Вызов из модуля __main__
 2019-10-18 13:31:04,943 DEBUG decorators.py Была вызвана функция arg_parser c параметрами ('7777', '') , {}. Вызов из модуля __main__
+2019-10-18 13:41:36,554 DEBUG decorators.py Была вызвана функция arg_parser c параметрами ('7777', '') , {}. Вызов из модуля __main__
+2019-10-18 13:44:58,835 DEBUG decorators.py Была вызвана функция arg_parser c параметрами ('7777', '') , {}. Вызов из модуля __main__
+2019-10-18 13:45:29,287 DEBUG decorators.py Была вызвана функция arg_parser c параметрами ('7777', '') , {}. Вызов из модуля __main__
+2019-10-18 13:45:49,073 DEBUG decorators.py Была вызвана функция arg_parser c параметрами ('7777', '') , {}. Вызов из модуля __main__
+2019-10-18 13:46:12,422 DEBUG decorators.py Была вызвана функция arg_parser c параметрами ('7777', '') , {}. Вызов из модуля __main__
+2019-10-18 13:48:03,961 DEBUG decorators.py Была вызвана функция arg_parser c параметрами ('7777', '') , {}. Вызов из модуля __main__
+2019-10-18 13:52:50,510 DEBUG decorators.py Была вызвана функция arg_parser c параметрами ('7777', '127.0.0.1') , {}. Вызов из модуля __main__
+2019-10-18 13:54:31,488 DEBUG decorators.py Была вызвана функция arg_parser c параметрами ('7777', '127.0.0.1') , {}. Вызов из модуля __main__
+2019-10-18 13:58:15,884 DEBUG decorators.py Была вызвана функция arg_parser c параметрами ('7777', '127.0.0.1') , {}. Вызов из модуля __main__
+2019-10-18 13:59:07,199 DEBUG decorators.py Была вызвана функция arg_parser c параметрами ('7777', '127.0.0.1') , {}. Вызов из модуля __main__
+2019-10-18 14:00:41,427 DEBUG decorators.py Была вызвана функция arg_parser c параметрами ('7777', '#127.0.0.1') , {}. Вызов из модуля __main__
+2019-10-18 14:01:52,252 DEBUG decorators.py Была вызвана функция arg_parser c параметрами ('7777', '127.0.0.1') , {}. Вызов из модуля __main__
+2019-10-18 14:03:41,055 DEBUG decorators.py Была вызвана функция arg_parser c параметрами ('7777', '127.0.0.1') , {}. Вызов из модуля __main__
+2019-10-18 14:03:57,044 DEBUG decorators.py Была вызвана функция arg_parser c параметрами ('7777', '127.0.0.1') , {}. Вызов из модуля __main__
+2019-10-18 14:04:25,238 DEBUG decorators.py Была вызвана функция arg_parser c параметрами ('7777', '127.0.0.1') , {}. Вызов из модуля __main__
+2019-10-18 14:04:45,705 DEBUG decorators.py Была вызвана функция arg_parser c параметрами ('7777', '127.0.0.1') , {}. Вызов из модуля __main__
+2019-10-18 14:05:44,215 DEBUG decorators.py Была вызвана функция arg_parser c параметрами ('7777', '127.0.0.1') , {}. Вызов из модуля __main__
+2019-10-18 14:14:23,314 DEBUG decorators.py Была вызвана функция arg_parser c параметрами ('7777', '127.0.0.1') , {}. Вызов из модуля __main__
+2019-10-18 14:24:19,392 DEBUG decorators.py Была вызвана функция arg_parser c параметрами ('7777', '127.0.0.1') , {}. Вызов из модуля __main__
+2019-10-18 14:24:19,470 INFO server.py Запущен сервер, порт для подключений: 7777 , адрес с которого принимаются подключения: 127.0.0.1. Если адрес не указан, принимаются соединения с любых адресов.
+2019-10-18 14:24:34,646 DEBUG decorators.py Была вызвана функция arg_parser c параметрами ('7777', '127.0.0.1') , {}. Вызов из модуля __main__
+2019-10-18 14:24:34,711 INFO server.py Запущен сервер, порт для подключений: 7777 , адрес с которого принимаются подключения: 127.0.0.1. Если адрес не указан, принимаются соединения с любых адресов.
+2019-10-18 14:24:56,514 DEBUG decorators.py Была вызвана функция arg_parser c параметрами ('7777', '127.0.0.1') , {}. Вызов из модуля __main__
+2019-10-18 14:24:56,610 INFO server.py Запущен сервер, порт для подключений: 7777 , адрес с которого принимаются подключения: 127.0.0.1. Если адрес не указан, принимаются соединения с любых адресов.
+2019-10-18 14:25:08,987 INFO server.py Установлено соедение с ПК ('127.0.0.1', 65477)
+2019-10-18 14:25:09,505 DEBUG decorators.py Была вызвана функция get_message c параметрами (<socket.socket fd=1096, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 65477)>,) , {}. Вызов из модуля basic_things.common_utils
+2019-10-18 14:25:09,505 DEBUG server.py Разбор сообщения от клиента : {'action': 'presence', 'time': 1571397909.0089233, 'user': {'account_name': 'Artem'}}
+2019-10-18 14:25:09,556 DEBUG decorators.py Была вызвана функция send_message c параметрами (<socket.socket fd=1096, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 65477)>, {'response': 200}) , {}. Вызов из модуля basic_things.common_utils
+2019-10-18 14:25:10,067 DEBUG decorators.py Была вызвана функция get_message c параметрами (<socket.socket fd=1096, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 65477)>,) , {}. Вызов из модуля basic_things.common_utils
+2019-10-18 14:25:10,068 DEBUG server.py Разбор сообщения от клиента : {'action': 'get_users', 'time': 1571397909.6427069, 'account_name': 'Artem'}
+2019-10-18 14:25:10,068 DEBUG decorators.py Была вызвана функция send_message c параметрами (<socket.socket fd=1096, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 65477)>, {'response': 202, 'data_list': ['client_1', 'client_2', 'test1', 'test2', 'motherfucker', 'Artem']}) , {}. Вызов из модуля basic_things.common_utils
+2019-10-18 14:25:10,574 DEBUG decorators.py Была вызвана функция get_message c параметрами (<socket.socket fd=1096, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 65477)>,) , {}. Вызов из модуля basic_things.common_utils
+2019-10-18 14:25:10,575 DEBUG server.py Разбор сообщения от клиента : {'action': 'get_contacts', 'time': 1571397910.100735, 'user': 'Artem'}
+2019-10-18 14:25:10,583 DEBUG decorators.py Была вызвана функция send_message c параметрами (<socket.socket fd=1096, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 65477)>, {'response': 202, 'data_list': []}) , {}. Вызов из модуля basic_things.common_utils
+2019-10-18 14:25:36,972 DEBUG decorators.py Была вызвана функция get_message c параметрами (<socket.socket fd=1096, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 65477)>,) , {}. Вызов из модуля basic_things.common_utils
+2019-10-18 14:25:36,974 INFO server.py Клиент ('127.0.0.1', 65477) отключился от сервера.
+2019-10-18 14:32:47,288 DEBUG decorators.py Была вызвана функция arg_parser c параметрами ('7777', '127.0.0.1') , {}. Вызов из модуля __main__
+2019-10-18 14:32:47,344 INFO server.py Запущен сервер, порт для подключений: 7777 , адрес с которого принимаются подключения: 127.0.0.1. Если адрес не указан, принимаются соединения с любых адресов.
+2019-10-18 14:32:58,741 INFO server.py Установлено соедение с ПК ('127.0.0.1', 65511)
+2019-10-18 14:32:58,742 INFO server.py Установлено соедение с ПК ('127.0.0.1', 65512)
+2019-10-18 14:32:58,742 DEBUG decorators.py Была вызвана функция get_message c параметрами (<socket.socket fd=1264, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 65511)>,) , {}. Вызов из модуля basic_things.common_utils
+2019-10-18 14:32:58,742 DEBUG server.py Разбор сообщения от клиента : {'action': 'presence', 'time': 1571398378.7415166, 'user': {'account_name': 'test1'}}
+2019-10-18 14:32:58,764 DEBUG decorators.py Была вызвана функция send_message c параметрами (<socket.socket fd=1264, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 65511)>, {'response': 200}) , {}. Вызов из модуля basic_things.common_utils
+2019-10-18 14:32:59,272 DEBUG decorators.py Была вызвана функция get_message c параметрами (<socket.socket fd=1264, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 65511)>,) , {}. Вызов из модуля basic_things.common_utils
+2019-10-18 14:32:59,273 DEBUG server.py Разбор сообщения от клиента : {'action': 'get_users', 'time': 1571398378.8130813, 'account_name': 'test1'}
+2019-10-18 14:32:59,278 DEBUG decorators.py Была вызвана функция send_message c параметрами (<socket.socket fd=1264, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 65511)>, {'response': 202, 'data_list': ['client_1', 'client_2', 'test1', 'test2', 'motherfucker', 'Artem']}) , {}. Вызов из модуля basic_things.common_utils
+2019-10-18 14:32:59,278 DEBUG decorators.py Была вызвана функция get_message c параметрами (<socket.socket fd=1260, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 65512)>,) , {}. Вызов из модуля basic_things.common_utils
+2019-10-18 14:32:59,278 DEBUG server.py Разбор сообщения от клиента : {'action': 'presence', 'time': 1571398378.742514, 'user': {'account_name': 'test2'}}
+2019-10-18 14:32:59,305 DEBUG decorators.py Была вызвана функция send_message c параметрами (<socket.socket fd=1260, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 65512)>, {'response': 200}) , {}. Вызов из модуля basic_things.common_utils
+2019-10-18 14:32:59,819 DEBUG decorators.py Была вызвана функция get_message c параметрами (<socket.socket fd=1264, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 65511)>,) , {}. Вызов из модуля basic_things.common_utils
+2019-10-18 14:32:59,819 DEBUG server.py Разбор сообщения от клиента : {'action': 'get_contacts', 'time': 1571398379.3082497, 'user': 'test1'}
+2019-10-18 14:32:59,825 DEBUG decorators.py Была вызвана функция send_message c параметрами (<socket.socket fd=1264, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 65511)>, {'response': 202, 'data_list': []}) , {}. Вызов из модуля basic_things.common_utils
+2019-10-18 14:32:59,826 DEBUG decorators.py Была вызвана функция get_message c параметрами (<socket.socket fd=1260, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 65512)>,) , {}. Вызов из модуля basic_things.common_utils
+2019-10-18 14:32:59,826 DEBUG server.py Разбор сообщения от клиента : {'action': 'get_users', 'time': 1571398379.3994386, 'account_name': 'test2'}
+2019-10-18 14:32:59,828 DEBUG decorators.py Была вызвана функция send_message c параметрами (<socket.socket fd=1260, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 65512)>, {'response': 202, 'data_list': ['client_1', 'client_2', 'test1', 'test2', 'motherfucker', 'Artem']}) , {}. Вызов из модуля basic_things.common_utils
+2019-10-18 14:33:00,337 DEBUG decorators.py Была вызвана функция get_message c параметрами (<socket.socket fd=1260, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 65512)>,) , {}. Вызов из модуля basic_things.common_utils
+2019-10-18 14:33:00,337 DEBUG server.py Разбор сообщения от клиента : {'action': 'get_contacts', 'time': 1571398379.8465905, 'user': 'test2'}
+2019-10-18 14:33:00,340 DEBUG decorators.py Была вызвана функция send_message c параметрами (<socket.socket fd=1260, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 65512)>, {'response': 202, 'data_list': []}) , {}. Вызов из модуля basic_things.common_utils
+2019-10-18 14:33:00,842 DEBUG decorators.py Была вызвана функция arg_parser c параметрами ('7777', '127.0.0.1') , {}. Вызов из модуля __main__
+2019-10-18 14:33:00,903 INFO server.py Запущен сервер, порт для подключений: 7777 , адрес с которого принимаются подключения: 127.0.0.1. Если адрес не указан, принимаются соединения с любых адресов.
+2019-10-18 14:33:29,418 DEBUG decorators.py Была вызвана функция get_message c параметрами (<socket.socket fd=1264, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 65511)>,) , {}. Вызов из модуля basic_things.common_utils
+2019-10-18 14:33:29,418 DEBUG server.py Разбор сообщения от клиента : {'action': 'message', 'from': 'test1', 'to': 'test2', 'time': 1571398409.0441537, 'mess_text': "Oh shit, i've done that"}

@@ -4,7 +4,6 @@ import socket
 import time
 import argparse
 import logging
-import dis
 import threading
 import logs.client_log_config
 from basic_things.common_utils import *
@@ -77,8 +76,11 @@ class ClientSender(threading.Thread, metaclass=ClientValidator):
         self.print_help()
         while True:
             command = input('Введите команду: ')
+            # Если отправка сообщения - соответствующий метод
             if command == 'message':
                 self.create_message()
+
+            # Вывод помощи
             elif command == 'help':
                 self.print_help()
 
@@ -203,11 +205,10 @@ class ClientReader(threading.Thread, metaclass=ClientValidator):
                             except:
                                 client_logger.error('Ошибка взаимодействия с базой данных')
 
-                        client_logger.info(f'Получено сообщение от пользователя {message[SENDER]}:\n'
-                                           f'{message[MESSAGE_TEXT]}')
+                        client_logger.info(f'Получено сообщение от пользователя'
+                                           f' {message[SENDER]}:\n{message[MESSAGE_TEXT]}')
                     else:
                         client_logger.error(f'Получено некорректное сообщение с сервера: {message}')
-                break
 
 
 @log
@@ -359,8 +360,8 @@ def main():
         print(f'Клиентский модуль запущен с именем: {client_name}')
 
     client_logger.info(
-        f'Запущен клиент с парамертами: адрес сервера: {server_address} , порт: {server_port},'
-        f' имя пользователя: {client_name}')
+        f'Запущен клиент с парамертами: адрес сервера: {server_address},'
+        f' порт: {server_port}, имя пользователя: {client_name}')
 
     # Инициализация сокета и сообщение серверу о нашем появлении
     try:
@@ -385,8 +386,8 @@ def main():
         exit(1)
     except (ConnectionRefusedError, ConnectionError):
         client_logger.critical(
-            f'Не удалось подключиться к серверу {server_address}:{server_port}, конечный компьютер'
-            f' отверг запрос на подключение.')
+            f'Не удалось подключиться к серверу {server_address}:{server_port},'
+            f' конечный компьютер отверг запрос на подключение.')
         exit(1)
     else:
 

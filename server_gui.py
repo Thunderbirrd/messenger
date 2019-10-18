@@ -1,5 +1,5 @@
 import sys
-from PySide2.QtWidgets import QMainWindow, QAction, QApplication, QLabel, QTableView, QDialog, QPushButton, \
+from PyQt5.QtWidgets import QMainWindow, QAction, QApplication, QLabel, QTableView, QDialog, QPushButton, \
     QLineEdit, QFileDialog, QMessageBox
 from PyQt5.QtWidgets import qApp
 from PyQt5.QtGui import QStandardItemModel, QStandardItem

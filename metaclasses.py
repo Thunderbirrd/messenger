@@ -3,7 +3,7 @@ import dis
 
 # метакласс для сервера
 class ServerMaker(type):
-    def __init__(self, cls_name, bases, cls_dict):
+    def __init__(cls, cls_name, bases, cls_dict):
         # cls_name - экземпляр метакласса - Server
         # bases - кортеж базовых классов - ()
         # cls_dict - словарь атрибутов и методов экземпляра метакласса
@@ -61,7 +61,7 @@ class ServerMaker(type):
 
 # Метакласс для проверки корректности клиентов:
 class ClientValidator(type):
-    def __init__(self, cls_name, bases, cls_dict):
+    def __init__(cls, cls_name, bases, cls_dict):
         # Список методов, которые используются в функциях класса:
         methods = []
         for func in cls_dict:
