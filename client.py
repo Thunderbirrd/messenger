@@ -1,5 +1,5 @@
 import logging
-import logs.config_client_log
+import logs.client_log_config
 import argparse
 import sys
 from PyQt5.QtWidgets import QApplication

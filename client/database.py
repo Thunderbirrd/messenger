@@ -147,6 +147,6 @@ if __name__ == '__main__':
     # print(test_db.get_users())
     # print(test_db.check_user('test1'))
     # print(test_db.check_user('test10'))
-    print(sorted(test_db.get_history('test2') , key=lambda item: item[3]))
+    print(sorted(test_db.get_history('test2'), key=lambda item: item[3]))
     # test_db.del_contact('test4')
     # print(test_db.get_contacts())

@@ -9,7 +9,7 @@ from PyQt5.QtCore import pyqtSignal, QObject
 sys.path.append('../')
 from basic_things.common_utils import *
 from basic_things.main_variables import *
-from basic_things.errors import *
+from basic_things.errors import ServerError
 
 # Логер и объект блокировки для работы с сокетом.
 client_logger = logging.getLogger('client')
@@ -92,7 +92,7 @@ class ClientTransport(threading.Thread, QObject):
 
     # Функция, генерирующая приветственное сообщение для сервера
     def create_presence(self):
-        out = {
+        info = {
             ACTION: PRESENCE,
             TIME: time.time(),
             USER: {
@@ -100,7 +100,7 @@ class ClientTransport(threading.Thread, QObject):
             }
         }
         client_logger.debug(f'Сформировано {PRESENCE} сообщение для пользователя {self.username}')
-        return out
+        return info
 
     # Функция обрабатывающяя сообщения от сервера. Ничего не возращает. Генерирует исключение при ошибке.
     def process_server_answer(self, message):
@@ -125,18 +125,18 @@ class ClientTransport(threading.Thread, QObject):
     # Функция обновляющая контакт - лист с сервера
     def contacts_list_update(self):
         client_logger.debug(f'Запрос контакт листа для пользователся {self.name}')
-        req = {
+        require = {
             ACTION: GET_CONTACTS,
             TIME: time.time(),
             USER: self.username
         }
-        client_logger.debug(f'Сформирован запрос {req}')
+        client_logger.debug(f'Сформирован запрос {require}')
         with socket_lock:
-            send_message(self.transport, req)
-            ans = get_message(self.transport)
-        client_logger.debug(f'Получен ответ {ans}')
-        if RESPONSE in ans and ans[RESPONSE] == 202:
-            for contact in ans[LIST_INFO]:
+            send_message(self.transport, require)
+            answer = get_message(self.transport)
+        client_logger.debug(f'Получен ответ {answer}')
+        if RESPONSE in answer and answer[RESPONSE] == 202:
+            for contact in answer[LIST_INFO]:
                 self.database.add_contact(contact)
         else:
             client_logger.error('Не удалось обновить список контактов.')
