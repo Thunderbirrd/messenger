@@ -1,5 +1,8 @@
 from sqlalchemy import create_engine, Table, Column, Integer, String, Text, MetaData, DateTime
 from sqlalchemy.orm import mapper, sessionmaker
+import os
+import sys
+sys.path.append('../')
 from basic_things.main_variables import *
 import datetime
 
@@ -31,7 +34,9 @@ class ClientDB:
         # Создаём движок базы данных, поскольку разрешено несколько клиентов одновременно, каждый должен иметь свою БД
         # Поскольку клиент мультипоточный необходимо отключить проверки на подключения с разных потоков,
         # иначе sqlite3.ProgrammingError
-        self.database_engine = create_engine(f'sqlite:///client_{name}.db3', echo=False, pool_recycle=7200,
+        path = os.path.dirname(os.path.realpath(__file__))
+        filename = f'client_{name}.db3'
+        self.database_engine = create_engine(f'sqlite:///{os.path.join(path, filename)}', echo=False, pool_recycle=7200,
                                              connect_args={'check_same_thread': False})
 
         # Создаём объект MetaData
@@ -39,13 +44,13 @@ class ClientDB:
 
         # Создаём таблицу известных пользователей
         known_users = Table('known_users', self.metadata,
-                            Column('id', Integer, primary_key=True),
+                            Column('id', Integer, primary_key=True, autoincrement=True, unique=True),
                             Column('username', String)
                             )
 
         # Создаём таблицу истории сообщений
         history = Table('message_history', self.metadata,
-                        Column('id', Integer, primary_key=True),
+                        Column('id', Integer, primary_key=True, autoincrement=True, unique=True),
                         Column('from_user', String),
                         Column('to_user', String),
                         Column('message', Text),
@@ -54,7 +59,7 @@ class ClientDB:
 
         # Создаём таблицу контактов
         contacts = Table('contacts', self.metadata,
-                         Column('id', Integer, primary_key=True),
+                         Column('id', Integer, primary_key=True, autoincrement=True, unique=True),
                          Column('name', String, unique=True)
                          )
 
@@ -78,7 +83,7 @@ class ClientDB:
             self.session.commit()
 
     # Функция удаления контакта
-    def del_contact(self, contact):
+    def delete_contact(self, contact):
         self.session.query(self.Contacts).filter_by(name=contact).delete()
 
     # Функция добавления известных пользователей.
@@ -132,18 +137,16 @@ class ClientDB:
 # отладка
 if __name__ == '__main__':
     test_db = ClientDB('test1')
-    for i in ['test3', 'test4', 'test5']:
-        test_db.add_contact(i)
-    test_db.add_contact('test4')
-    test_db.add_users(['test1', 'test2', 'test3', 'test4', 'test5'])
-    test_db.save_message('test1', 'test2', f'Привет! я тестовое сообщение от {datetime.datetime.now()}!')
-    test_db.save_message('test2', 'test1', f'Привет! я другое тестовое сообщение от {datetime.datetime.now()}!')
-    print(test_db.get_contacts())
-    print(test_db.get_users())
-    print(test_db.check_user('test1'))
-    print(test_db.check_user('test10'))
-    print(test_db.get_history('test2'))
-    print(test_db.get_history(to_who='test2'))
-    print(test_db.get_history('test3'))
-    test_db.del_contact('test4')
-    print(test_db.get_contacts())
+    # for i in ['test3', 'test4', 'test5']:
+    #    test_db.add_contact(i)
+    # test_db.add_contact('test4')
+    # test_db.add_users(['test1', 'test2', 'test3', 'test4', 'test5'])
+    # test_db.save_message('test2', 'in', f'Привет! я тестовое сообщение от {datetime.datetime.now()}!')
+    # test_db.save_message('test2', 'out', f'Привет! я другое тестовое сообщение от {datetime.datetime.now()}!')
+    # print(test_db.get_contacts())
+    # print(test_db.get_users())
+    # print(test_db.check_user('test1'))
+    # print(test_db.check_user('test10'))
+    print(sorted(test_db.get_history('test2') , key=lambda item: item[3]))
+    # test_db.del_contact('test4')
+    # print(test_db.get_contacts())

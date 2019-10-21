@@ -1,9 +1,9 @@
 from basic_things.main_variables import *
 import json
-from errors import IncorrectDataReceivedError, NonDictInputError
+from basic_things.errors import IncorrectDataReceivedError, NonDictInputError
 import sys
 sys.path.append('../')
-from decorators import log
+from basic_things.decorators import log
 
 
 @log
