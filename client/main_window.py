@@ -10,7 +10,7 @@ import time
 import base64
 
 sys.path.append('../')
-from client.main_window_conv import Ui_MainClientWindow
+from client.main_window_conv import UiMainClientWindow
 from client.add_contact import AddContactDialog
 from client.delete_contact import DelContactDialog
 from client.database import ClientDB
@@ -34,7 +34,7 @@ class ClientMainWindow(QMainWindow):
         self.decrypter = PKCS1_OAEP.new(keys)
 
         # Загружаем конфигурацию окна из дизайнера
-        self.ui = Ui_MainClientWindow()
+        self.ui = UiMainClientWindow()
         self.ui.setup_ui(self)
 
         # Кнопка "Выход"
