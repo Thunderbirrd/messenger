@@ -51,8 +51,8 @@ class ClientDB:
         # Создаём таблицу истории сообщений
         history = Table('message_history', self.metadata,
                         Column('id', Integer, primary_key=True, autoincrement=True, unique=True),
-                        Column('from_user', String),
-                        Column('to_user', String),
+                        Column('contact', String),
+                        Column('direction', String),
                         Column('message', Text),
                         Column('date', DateTime)
                         )
@@ -75,12 +75,20 @@ class ClientDB:
         session = sessionmaker(bind=self.database_engine)
         self.session = session()
 
+        # Необходимо очистить таблицу контактов, т.к. при запуске они подгружаются с сервера.
+        self.session.query(self.Contacts).delete()
+        self.session.commit()
+
     # Функция добавления контактов
     def add_contact(self, contact):
         if not self.session.query(self.Contacts).filter_by(name=contact).count():
             contact_row = self.Contacts(contact)
             self.session.add(contact_row)
             self.session.commit()
+
+    # Функция очсистки контактов
+    def contacts_clear(self):
+        self.session.query(self.Contacts).delete()
 
     # Функция удаления контакта
     def delete_contact(self, contact):
@@ -124,13 +132,9 @@ class ClientDB:
             return False
 
     # Функция возвращающая историю переписки
-    def get_history(self, from_who=None, to_who=None):
-        query = self.session.query(self.MessageHistory)
-        if from_who:
-            query = query.filter_by(from_user=from_who)
-        if to_who:
-            query = query.filter_by(to_user=to_who)
-        return [(history_row.from_user, history_row.to_user, history_row.message, history_row.date)
+    def get_history(self, contact):
+        query = self.session.query(self.MessageHistory).filter_by(contact=contact)
+        return [(history_row.contact, history_row.direction, history_row.message, history_row.date)
                 for history_row in query.all()]
 
 

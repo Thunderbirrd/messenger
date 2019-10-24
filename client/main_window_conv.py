@@ -1,12 +1,12 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 
 
-class Ui_MainClientWindow(object):
-    def setup_ui(self, main_client_window):
-        main_client_window.setObjectName("MainClientWindow")
-        main_client_window.resize(756, 534)
-        main_client_window.setMinimumSize(QtCore.QSize(756, 534))
-        self.centralwidget = QtWidgets.QWidget(main_client_window)
+class UiMainClientWindow(object):
+    def setupUi(self, MainClientWindow):
+        MainClientWindow.setObjectName("MainClientWindow")
+        MainClientWindow.resize(756, 534)
+        MainClientWindow.setMinimumSize(QtCore.QSize(756, 534))
+        self.centralwidget = QtWidgets.QWidget(MainClientWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.label_contacts = QtWidgets.QLabel(self.centralwidget)
         self.label_contacts.setGeometry(QtCore.QRect(10, 0, 101, 16))
@@ -38,23 +38,23 @@ class Ui_MainClientWindow(object):
         self.btn_clear = QtWidgets.QPushButton(self.centralwidget)
         self.btn_clear.setGeometry(QtCore.QRect(460, 450, 131, 31))
         self.btn_clear.setObjectName("btn_clear")
-        main_client_window.setCentralWidget(self.centralwidget)
-        self.menubar = QtWidgets.QMenuBar(main_client_window)
+        MainClientWindow.setCentralWidget(self.centralwidget)
+        self.menubar = QtWidgets.QMenuBar(MainClientWindow)
         self.menubar.setGeometry(QtCore.QRect(0, 0, 756, 21))
         self.menubar.setObjectName("menubar")
         self.menu = QtWidgets.QMenu(self.menubar)
         self.menu.setObjectName("menu")
         self.menu_2 = QtWidgets.QMenu(self.menubar)
         self.menu_2.setObjectName("menu_2")
-        main_client_window.setMenuBar(self.menubar)
-        self.statusBar = QtWidgets.QStatusBar(main_client_window)
+        MainClientWindow.setMenuBar(self.menubar)
+        self.statusBar = QtWidgets.QStatusBar(MainClientWindow)
         self.statusBar.setObjectName("statusBar")
-        main_client_window.setStatusBar(self.statusBar)
-        self.menu_exit = QtWidgets.QAction(main_client_window)
+        MainClientWindow.setStatusBar(self.statusBar)
+        self.menu_exit = QtWidgets.QAction(MainClientWindow)
         self.menu_exit.setObjectName("menu_exit")
-        self.menu_add_contact = QtWidgets.QAction(main_client_window)
+        self.menu_add_contact = QtWidgets.QAction(MainClientWindow)
         self.menu_add_contact.setObjectName("menu_add_contact")
-        self.menu_del_contact = QtWidgets.QAction(main_client_window)
+        self.menu_del_contact = QtWidgets.QAction(MainClientWindow)
         self.menu_del_contact.setObjectName("menu_del_contact")
         self.menu.addAction(self.menu_exit)
         self.menu_2.addAction(self.menu_add_contact)
@@ -63,9 +63,9 @@ class Ui_MainClientWindow(object):
         self.menubar.addAction(self.menu.menuAction())
         self.menubar.addAction(self.menu_2.menuAction())
 
-        self.retranslate_ui(main_client_window)
+        self.retranslate_ui(MainClientWindow)
         self.btn_clear.clicked.connect(self.text_message.clear)
-        QtCore.QMetaObject.connectSlotsByName(main_client_window)
+        QtCore.QMetaObject.connectSlotsByName(MainClientWindow)
 
     def retranslate_ui(self, MainClientWindow):
         _translate = QtCore.QCoreApplication.translate
