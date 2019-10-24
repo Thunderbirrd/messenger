@@ -3,7 +3,7 @@ import os
 import argparse
 import logging
 import configparser
-import logs.config_server_log
+import logs.server_log_config
 from basic_things.common_utils import *
 from basic_things.decorators import log
 from server.core import MessageProcessor

@@ -5,7 +5,6 @@ import argparse
 import sys
 from PyQt5.QtWidgets import QApplication, QMessageBox
 from crypto.PublicKey import RSA
-
 from basic_things.main_variables import *
 from basic_things.errors import ServerError
 from basic_things.decorators import log
@@ -25,6 +24,7 @@ def arg_parser():
     parser.add_argument('addr', default=DEFAULT_IP_ADDRESS, nargs='?')
     parser.add_argument('port', default=DEFAULT_PORT, type=int, nargs='?')
     parser.add_argument('-n', '--name', default=None, nargs='?')
+    parser.add_argument('-p', '--password', default='', nargs='?')
     namespace = parser.parse_args(sys.argv[1:])
     server_address = namespace.addr
     server_port = namespace.port
