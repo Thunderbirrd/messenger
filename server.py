@@ -14,6 +14,7 @@ from PyQt5.QtCore import Qt
 
 server_logger = logging.getLogger('server')
 
+
 # Парсер аргументов коммандной строки.
 @log
 def arg_parser(default_port, default_address):
