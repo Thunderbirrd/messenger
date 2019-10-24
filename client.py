@@ -81,7 +81,7 @@ if __name__ == '__main__':
     database = ClientDB(client_name)
     # Создаём объект - транспорт и запускаем транспортный поток
     try:
-        transport = ClientTransport(server_port, server_address, database, client_name, client_passwd, keys)
+        transport = ClientTransport(server_port, server_address, database, client_name, client_password, keys)
     except ServerError as error:
         message = QMessageBox()
         message.critical(start_dialog, 'Ошибка сервера', error.text)
