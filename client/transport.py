@@ -10,7 +10,6 @@ import hmac
 import binascii
 from PyQt5.QtCore import pyqtSignal, QObject
 
-sys.path.append('../')
 from basic_things.common_utils import *
 from basic_things.main_variables import *
 from basic_things.errors import ServerError

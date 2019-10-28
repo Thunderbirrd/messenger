@@ -28,20 +28,20 @@ class UserNameDialog(QDialog):
         self.btn_cancel.move(90, 105)
         self.btn_cancel.clicked.connect(qApp.exit)
 
-        self.label_passwd = QLabel('Введите пароль:', self)
-        self.label_passwd.move(10, 55)
-        self.label_passwd.setFixedSize(150, 15)
+        self.label_password = QLabel('Введите пароль:', self)
+        self.label_password.move(10, 55)
+        self.label_password.setFixedSize(150, 15)
 
-        self.client_passwd = QLineEdit(self)
-        self.client_passwd.setFixedSize(154, 20)
-        self.client_passwd.move(10, 75)
-        self.client_passwd.setEchoMode(QLineEdit.Password)
+        self.client_password = QLineEdit(self)
+        self.client_password.setFixedSize(154, 20)
+        self.client_password.move(10, 75)
+        self.client_password.setEchoMode(QLineEdit.Password)
 
         self.show()
 
     # Обработчик кнопки ОК, если поле вводе не пустое, ставим флаг и завершаем приложение.
     def click(self):
-        if self.client_name.text() and self.client_passwd.text():
+        if self.client_name.text() and self.client_password.text():
             self.ok_pressed = True
             qApp.exit()
 

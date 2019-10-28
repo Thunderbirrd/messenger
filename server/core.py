@@ -258,7 +258,7 @@ class MessageProcessor(threading.Thread, metaclass=ServerMaker):
             # В словарь байты нельзя, декодируем (json.dumps -> TypeError)
             message_auth[DATA] = random_str.decode('ascii')
             # Создаём хэш пароля и связки с рандомной строкой, сохраняем серверную версию ключа
-            hash = hmac.new(self.database.get_hash(message[USER][ACCOUNT_NAME]), random_str)
+            hash = hmac.new(self.database.get_hash(message[USER][ACCOUNT_NAME]), random_str, digestmod=hashlib)
             digest = hash.digest()
             try:
                 # Обмен с клиентом

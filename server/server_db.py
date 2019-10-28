@@ -170,7 +170,7 @@ class ServerDB:
     # Функция возвращает хэш требуемго пользователя.
     def get_hash(self, name):
         user = self.session.query(self.AllUsers).filter_by(name=name).first()
-        return user.passwd_hash
+        return user.password_hash
 
     # Функция возвращает публичный ключ пользователя
     def get_pubkey(self, name):

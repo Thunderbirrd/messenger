@@ -82,5 +82,5 @@ class RegisterUser(QDialog):
 if __name__ == '__main__':
     app = QApplication([])
     app.setAttribute(Qt.AA_DisableWindowContextHelpButton)
-    dial = RegisterUser(None)
+    # dial = RegisterUser(None)
     app.exec_()

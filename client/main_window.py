@@ -9,13 +9,9 @@ import logging
 import time
 import base64
 
-sys.path.append('../')
 from client.main_window_conv import UiMainClientWindow
 from client.add_contact import AddContactDialog
 from client.delete_contact import DelContactDialog
-from client.database import ClientDB
-from client.transport import ClientTransport
-from client.start_dialog import UserNameDialog
 from basic_things.errors import ServerError
 from basic_things.main_variables import *
 

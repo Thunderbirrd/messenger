@@ -50,13 +50,13 @@ if __name__ == '__main__':
     client_app = QApplication(sys.argv)
 
     # Если имя пользователя не было указано в командной строке то запросим его
-    if not client_name:
+    if not client_name or not client_password:
         start_dialog = UserNameDialog()
         client_app.exec_()
         # Если пользователь ввёл имя и нажал ОК, то сохраняем ведённое и удаляем объект, инааче выходим
         if start_dialog.ok_pressed:
             client_name = start_dialog.client_name.text()
-            client_password = start_dialog.client_passwd.text()
+            client_password = start_dialog.client_password.text()
         else:
             exit(0)
 
