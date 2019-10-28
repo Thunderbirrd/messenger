@@ -37,7 +37,6 @@ def arg_parser():
             f'Попытка запуска клиента с неподходящим номером порта: {server_port}.'
             f' Допустимы адреса с 1024 до 65535. Клиент завершается.')
         exit(1)
-
     return server_address, server_port, client_name, client_password
 
 
@@ -50,7 +49,7 @@ if __name__ == '__main__':
     client_app = QApplication(sys.argv)
 
     # Если имя пользователя не было указано в командной строке то запросим его
-    if not client_name or not client_password:
+    if not client_name:
         start_dialog = UserNameDialog()
         client_app.exec_()
         # Если пользователь ввёл имя и нажал ОК, то сохраняем ведённое и удаляем объект, инааче выходим

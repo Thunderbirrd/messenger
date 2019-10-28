@@ -26,6 +26,7 @@ def arg_parser(default_port, default_address):
     listen_address = namespace.a
     listen_port = namespace.p
     gui_flag = namespace.no_gui
+    server_logger.debug("Аргументы успешно загружены.")
     return listen_address, listen_port, gui_flag
 
 

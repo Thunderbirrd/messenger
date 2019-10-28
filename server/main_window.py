@@ -4,7 +4,7 @@ sys.path.append('../')
 from PyQt5.QtWidgets import QMainWindow, QAction, qApp, QApplication, QLabel, QTableView
 from PyQt5.QtGui import QStandardItemModel, QStandardItem
 from PyQt5.QtCore import QTimer
-from server.static_window import StaticWindow
+from server.stat_window import StatWindow
 from server.config_window import ConfigWindow
 from server.add_user import RegisterUser
 from server.remove_user import DeleteUserDialog
@@ -38,7 +38,7 @@ class MainWindow(QMainWindow):
         self.register_btn = QAction('Регистрация пользователя', self)
 
         # Кнопка удаления пользователя
-        self.remove_btn = QAction('Удаление пользователя' , self)
+        self.remove_btn = QAction('Удаление пользователя', self)
 
         # Кнопка вывести историю сообщений
         self.show_history_button = QAction('История клиентов', self)
@@ -110,7 +110,7 @@ class MainWindow(QMainWindow):
     # Функция создающяя окно со статистикой клиентов
     def show_statistics(self):
         global stat_window
-        stat_window = StaticWindow(self.database)
+        stat_window = StatWindow(self.database)
         stat_window.show()
 
     # Функция создающяя окно с настройками сервера.
@@ -122,12 +122,12 @@ class MainWindow(QMainWindow):
     # Функция вызывающая окно регистрации пользователя
     def register_user(self):
         global reg_window
-        reg_window = RegisterUser(self.database , self.server_thread)
+        reg_window = RegisterUser(self.database, self.server_thread)
         reg_window.show()
 
     # Функция вызывающяя окно удаления пользователя.
     def remove_user(self):
         global rem_window
-        rem_window = DeleteUserDialog(self.database , self.server_thread)
+        rem_window = DeleteUserDialog(self.database, self.server_thread)
         rem_window.show()
 

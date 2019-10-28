@@ -4,7 +4,7 @@ from PyQt5.QtCore import Qt
 
 
 # Класс окна со статистикой пользователей
-class StaticWindow(QDialog):
+class StatWindow(QDialog):
     def __init__(self, database):
         super().__init__()
 

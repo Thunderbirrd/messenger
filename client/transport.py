@@ -117,12 +117,12 @@ class ClientTransport(threading.Thread, QObject):
                     elif ans[RESPONSE] == 511:
                         # Если всё нормально, то продолжаем процедуру авторизации.
                         ans_data = ans[DATA]
-                        hash = hmac.new(password_hash_string, ans_data.encode('utf-8'))
+                        hash = hmac.new(password_hash_string, ans_data.encode('utf-8'), hashlib.sha256)
                         digest = hash.digest()
                         my_ans = RESPONSE_511
                         my_ans[DATA] = binascii.b2a_base64(digest).decode('ascii')
                         send_message(self.transport, my_ans)
-                        self.process_server_ans(get_message(self.transport))
+                        self.process_server_answer(get_message(self.transport))
             except (OSError, json.JSONDecodeError):
                 raise ServerError('Сбой соединения в процессе авторизации.')
 
