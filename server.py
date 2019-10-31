@@ -18,6 +18,11 @@ server_logger = logging.getLogger('server')
 # Парсер аргументов коммандной строки.
 @log
 def arg_parser(default_port, default_address):
+    '''
+        Парсер аргументов командной строки, возвращает кортеж из 4 элементов
+        адрес сервера, порт, имя пользователя, пароль.
+        Выполняет проверку на корректность номера порта.
+    '''
     parser = argparse.ArgumentParser()
     parser.add_argument('-p', default=default_port, type=int, nargs='?')
     parser.add_argument('-a', default=default_address, nargs='?')
@@ -32,6 +37,7 @@ def arg_parser(default_port, default_address):
 
 # Загрузка файла конфигурации
 def config_load():
+    '''Парсер конфигурационного ini файла.'''
     config = configparser.ConfigParser()
     dir_path = os.path.dirname(os.path.realpath(__file__))
     config.read(f"{dir_path}/{'server.ini'}")

@@ -19,8 +19,11 @@ client_logger = logging.getLogger('client')
 socket_lock = threading.Lock()
 
 
-# Класс - Траннспорт, отвечает за взаимодействие с сервером
 class ClientTransport(threading.Thread, QObject):
+    '''
+    Класс реализующий транспортную подсистему клиентского
+    модуля. Отвечает за взаимодействие с сервером.
+    '''
     # Сигналы новое сообщение и потеря соединения
     new_message = pyqtSignal(str)
     connection_lost = pyqtSignal()
@@ -58,8 +61,8 @@ class ClientTransport(threading.Thread, QObject):
             # Флаг продолжения работы транспорта.
         self.running = True
 
-    # Функция инициализации соединения с сервером
     def connection_init(self, port, ip):
+        '''Метод отвечающий за устанновку соединения с сервером.'''
         # Инициализация сокета и сообщение серверу о нашем появлении
         self.transport = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
@@ -126,8 +129,8 @@ class ClientTransport(threading.Thread, QObject):
             except (OSError, json.JSONDecodeError):
                 raise ServerError('Сбой соединения в процессе авторизации.')
 
-    # Функция обрабатывающяя сообщения от сервера. Ничего не возращает. Генерирует исключение при ошибке.
     def process_server_answer(self, message):
+        '''Метод обработчик поступающих сообщений с сервера.'''
         client_logger.debug(f'Разбор сообщения от сервера: {message}')
 
         # Если это подтверждение чего-либо
@@ -149,8 +152,8 @@ class ClientTransport(threading.Thread, QObject):
             client_logger.debug(f'Получено сообщение от пользователя {message[SENDER]}:{message[MESSAGE_TEXT]}')
             self.new_message.emit(message)
 
-    # Функция обновляющая контакт - лист с сервера
     def contacts_list_update(self):
+        '''Метод обновляющий с сервера список контактов.'''
         client_logger.debug(f'Запрос контакт листа для пользователся {self.name}')
         require = {
             ACTION: GET_CONTACTS,
@@ -168,8 +171,8 @@ class ClientTransport(threading.Thread, QObject):
         else:
             client_logger.error('Не удалось обновить список контактов.')
 
-    # Функция обновления таблицы известных пользователей.
     def user_list_update(self):
+        '''Метод обновляющий с сервера список пользователей.'''
         client_logger.debug(f'Запрос списка известных пользователей {self.username}')
         req = {
             ACTION: USERS_REQUEST,
@@ -184,8 +187,8 @@ class ClientTransport(threading.Thread, QObject):
         else:
             client_logger.error('Не удалось обновить список известных пользователей.')
 
-    # Функция запроса открытого ключа клиента с сервера.
     def key_request(self, user):
+        '''Метод запрашивающий с сервера публичный ключ пользователя.'''
         client_logger.debug(f'Запрос публичного ключа для {user}')
         req = {
             ACTION: PUBLIC_KEY_REQUEST,
@@ -200,8 +203,8 @@ class ClientTransport(threading.Thread, QObject):
         else:
             client_logger.error(f'Не удалось получить ключ собеседника{user}.')
 
-    # Функция сообщающая на сервер о добавлении нового контакта
     def add_contact(self, contact):
+        '''Метод отправляющий на сервер сведения о добавлении контакта.'''
         client_logger.debug(f'Создание контакта {contact}')
         req = {
             ACTION: ADD_CONTACT,
@@ -213,8 +216,8 @@ class ClientTransport(threading.Thread, QObject):
             send_message(self.transport, req)
             self.process_server_answer(get_message(self.transport))
 
-    # Функция удаления клиента на сервере
     def remove_contact(self, contact):
+        '''Метод отправляющий на сервер сведения о удалении контакта.'''
         client_logger.debug(f'Удаление контакта {contact}')
         req = {
             ACTION: REMOVE_CONTACT,
@@ -226,8 +229,8 @@ class ClientTransport(threading.Thread, QObject):
             send_message(self.transport, req)
             self.process_server_answer(get_message(self.transport))
 
-    # Функция закрытия соединения, отправляет сообщение о выходе.
     def transport_shutdown(self):
+        '''Метод уведомляющий сервер о завершении работы клиента.'''
         self.running = False
         message = {
             ACTION: EXIT,
@@ -242,8 +245,8 @@ class ClientTransport(threading.Thread, QObject):
         client_logger.debug('Транспорт завершает работу.')
         time.sleep(0.5)
 
-    # Функция отправки сообщения на сервер
     def send_message(self, to, message):
+        '''Метод отправляющий на сервер сообщения для пользователя.'''
         message_dict = {
             ACTION: MESSAGE,
             SENDER: self.username,
@@ -260,6 +263,7 @@ class ClientTransport(threading.Thread, QObject):
             client_logger.info(f'Отправлено сообщение для пользователя {to}')
 
     def run(self):
+        '''Метод содержащий основной цикл работы транспортного потока.'''
         client_logger.debug('Запущен процесс - приёмник собщений с сервера.')
         while self.running:
             # Отдыхаем секунду и снова пробуем захватить сокет.

@@ -13,6 +13,7 @@ import os
 
 # Класс основного окна
 class MainWindow(QMainWindow):
+    '''Класс - основное окно сервера.'''
     def __init__(self, database, server, config):
         # Конструктор предка
         super().__init__()
@@ -88,6 +89,7 @@ class MainWindow(QMainWindow):
 
     # Создаём модель и заполняем таблицу подключений.
     def create_users_model(self):
+        '''Метод заполняющий таблицу активных пользователей.'''
         list_users = self.database.active_users_list()
         list_model = QStandardItemModel()
         list_model.setHorizontalHeaderLabels(['Имя Клиента', 'IP Адрес', 'Порт', 'Время подключения'])
@@ -109,24 +111,28 @@ class MainWindow(QMainWindow):
 
     # Функция создающяя окно со статистикой клиентов
     def show_statistics(self):
+        '''Метод создающий окно со статистикой клиентов.'''
         global stat_window
         stat_window = StatWindow(self.database)
         stat_window.show()
 
     # Функция создающяя окно с настройками сервера.
     def server_config(self):
+        '''Метод создающий окно с настройками сервера.'''
         global config_window
         # Создаём окно и заносим в него текущие параметры
         config_window = ConfigWindow(self.config)
 
     # Функция вызывающая окно регистрации пользователя
     def register_user(self):
+        '''Метод создающий окно регистрации пользователя.'''
         global reg_window
         reg_window = RegisterUser(self.database, self.server_thread)
         reg_window.show()
 
     # Функция вызывающяя окно удаления пользователя.
     def remove_user(self):
+        '''Метод создающий окно удаления пользователя.'''
         global rem_window
         rem_window = DeleteUserDialog(self.database, self.server_thread)
         rem_window.show()

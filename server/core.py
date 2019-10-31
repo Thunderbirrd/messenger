@@ -19,8 +19,12 @@ from basic_things.common_utils import send_message, get_message
 logger = logging.getLogger('server')
 
 
-# Основной класс сервера, обрабатывающий пакеты
 class MessageProcessor(threading.Thread, metaclass=ServerMaker):
+    '''
+        Основной класс сервера. Принимает содинения, словари - пакеты
+        от клиентов, обрабатывает поступающие сообщения.
+        Работает в качестве отдельного потока.
+    '''
     port = Port()
 
     def __init__(self, listen_address, listen_port, database):
@@ -51,6 +55,7 @@ class MessageProcessor(threading.Thread, metaclass=ServerMaker):
         super().__init__()
 
     def run(self):
+        '''Метод основной цикл потока.'''
         # Инициализация Сокета
         self.init_socket()
 
@@ -85,9 +90,11 @@ class MessageProcessor(threading.Thread, metaclass=ServerMaker):
                     except (OSError, json.JSONDecodeError, TypeError):
                         self.remove_client(client_with_message)
 
-    # Функция обработчик клиента с которым потеряна связь
-    # ищет клиента в словаре клиентов и удаляет его со списков и базы:
     def remove_client(self, client):
+        '''
+            Метод обработчик клиента с которым прервана связь.
+            Ищет клиента и удаляет его из списков и базы:
+        '''
         logger.info(f'Клиент {client.getpeername()} отключился от сервера.')
         for name in self.names:
             if self.names[name] == client:
@@ -97,8 +104,8 @@ class MessageProcessor(threading.Thread, metaclass=ServerMaker):
         self.clients.remove(client)
         client.close()
 
-    # Функция-инициализатор сокета
     def init_socket(self):
+        '''Метод инициализатор сокета.'''
         logger.info(
             f'Запущен сервер, порт для подключений: {self.port} , адрес с которого принимаются'
             f' подключения: {self.address}. Если адрес не указан, принимаются соединения с любых адресов.')
@@ -114,6 +121,7 @@ class MessageProcessor(threading.Thread, metaclass=ServerMaker):
     # Функция адресной отправки сообщения определённому клиенту. Принимает словарь сообщение, список зарегистрированых
     # пользователей и слушающие сокеты. Ничего не возвращает.
     def process_message(self, message):
+        '''Метод отправки сообщения клиенту.'''
         if message[DESTINATION] in self.names and self.names[message[DESTINATION]] in self.listen_sockets:
             try:
                 send_message(self.names[message[DESTINATION]], message)
@@ -133,6 +141,7 @@ class MessageProcessor(threading.Thread, metaclass=ServerMaker):
     #     словарь-ответ в случае необходимости.
     @login_required
     def process_client_message(self, message, client):
+        '''Метод отбработчик поступающих сообщений.'''
         logger.debug(f'Разбор сообщения от клиента : {message}')
         # Если это сообщение о присутствии, принимаем и отвечаем
         if ACTION in message and message[ACTION] == PRESENCE and TIME in message and USER in message:
@@ -230,6 +239,7 @@ class MessageProcessor(threading.Thread, metaclass=ServerMaker):
 
     # Функция авторизации пользователя на сервере
     def authorize_user(self, message, sock):
+        '''Метод реализующий авторизцию пользователей.'''
         # Если имя пользователя уже занято то возвращаем 400
         if message[USER][ACCOUNT_NAME] in self.names.keys():
             response = RESPONSE_400
@@ -293,6 +303,7 @@ class MessageProcessor(threading.Thread, metaclass=ServerMaker):
 
     # Функция - отправляет сервисное сообщение 205 с требованием клиентам обновить списки
     def service_update_lists(self):
+        '''Метод реализующий отправки сервисного сообщения 205 клиентам.'''
         for client in self.names:
             try:
                 send_message(self.names[client], RESPONSE_205)
